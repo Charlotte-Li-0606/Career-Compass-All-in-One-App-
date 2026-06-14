@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-06-13",
+  "totalDocuments": 210,
+  "totalRoles": 20,
+  "totalSkillRolePairs": 210,
+  "roleFiles": [
+    "engineering_logistics.json",
+    "finance_banking.json",
+    "marketing_ecommerce.json",
+    "professional_services.json",
+    "technology_data.json"
+  ],
+  "roles": [
+    {
+      "roleTitle": "Graduate Civil Engineer",
+      "roleTitleZh": "畢業土木工程師",
+      "sector": "Engineering & Construction",
+      "skillCount": 11,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Supply Chain Analyst",
+      "roleTitleZh": "供應鏈分析師",
+      "sector": "Engineering & Construction",
+      "skillCount": 11,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Building Services Engineer",
+      "roleTitleZh": "屋宇設備工程師",
+      "sector": "Engineering & Construction",
+      "skillCount": 10,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Investment Banking Analyst",
+      "roleTitleZh": "投資銀行分析師",
+      "sector": "Banking & Finance",
+      "skillCount": 11,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Risk Analyst",
+      "roleTitleZh": "風險分析師",
+      "sector": "Banking & Finance",
+      "skillCount": 10,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Wealth Management Trainee",
+      "roleTitleZh": "財富管理培訓生",
+      "sector": "Banking & Finance",
+      "skillCount": 10,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Fintech Associate",
+      "roleTitleZh": "金融科技專員",
+      "sector": "Banking & Finance",
+      "skillCount": 10,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Compliance Officer",
+      "roleTitleZh": "合規主任",
+      "sector": "Banking & Finance",
+      "skillCount": 9,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Digital Marketing Specialist",
+      "roleTitleZh": "數位行銷專員",
+      "sector": "Marketing & E-commerce",
+      "skillCount": 11,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Product Manager",
+      "roleTitleZh": "產品經理",
+      "sector": "Marketing & E-commerce",
+      "skillCount": 10,
+      "isEntryLevel": false
+    },
+    {
+      "roleTitle": "E-commerce Operations Specialist",
+      "roleTitleZh": "電子商務運營專員",
+      "sector": "Marketing & E-commerce",
+      "skillCount": 11,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Management Consultant",
+      "roleTitleZh": "管理顧問",
+      "sector": "Professional Services",
+      "skillCount": 10,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Audit Associate",
+      "roleTitleZh": "審計助理",
+      "sector": "Professional Services",
+      "skillCount": 11,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "ESG Analyst",
+      "roleTitleZh": "環境社會管治分析師",
+      "sector": "Professional Services",
+      "skillCount": 9,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "HR Specialist",
+      "roleTitleZh": "人力資源專員",
+      "sector": "Professional Services",
+      "skillCount": 10,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Data Analyst",
+      "roleTitleZh": "數據分析師",
+      "sector": "Technology & IT",
+      "skillCount": 12,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Software Engineer",
+      "roleTitleZh": "軟件工程師",
+      "sector": "Technology & IT",
+      "skillCount": 12,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "Business Intelligence Developer",
+      "roleTitleZh": "商業智能開發者",
+      "sector": "Technology & IT",
+      "skillCount": 10,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "AI / Machine Learning Engineer",
+      "roleTitleZh": "人工智能/機器學習工程師",
+      "sector": "Technology & IT",
+      "skillCount": 11,
+      "isEntryLevel": true
+    },
+    {
+      "roleTitle": "IT Project Manager",
+      "roleTitleZh": "資訊科技項目經理",
+      "sector": "Technology & IT",
+      "skillCount": 11,
+      "isEntryLevel": false
+    }
+  ]
+}

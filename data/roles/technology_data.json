@@ -1,0 +1,114 @@
+{
+  "sector": "Technology & IT",
+  "subSector": "Data & Analytics",
+  "lastUpdated": "2026-06-13",
+  "source": "Curated from JobsDB HK, Glassdoor HK, CTgoodjobs, FDM Group graduate programme listings, and LinkedIn HK job postings (2025-2026)",
+  "roles": [
+    {
+      "roleTitle": "Data Analyst",
+      "roleTitleZh": "數據分析師",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 22,000 – 30,000/month",
+      "growthOutlook": "Demand growing ~15% YoY in HK, driven by fintech and smart city initiatives. Strong demand across banking, insurance, and retail sectors. Entry-level roles frequently open to fresh graduates.",
+      "hiringIndustries": ["Banking & Finance", "Insurance", "Technology & IT", "Retail & E-commerce", "Professional Services"],
+      "requiredSkills": [
+        { "skillName": "SQL", "skillCategory": "Databases", "importance": "critical", "description": "Write complex queries with joins, subqueries, and window functions for data extraction and transformation. Used daily in most data analyst roles.", "typicalLevel": "intermediate" },
+        { "skillName": "Python", "skillCategory": "Programming Languages", "importance": "critical", "description": "Use pandas and numpy for data manipulation; matplotlib/seaborn for visualization; basic scripting for automation and reporting.", "typicalLevel": "intermediate" },
+        { "skillName": "Data Visualization (Tableau / Power BI)", "skillCategory": "Business Intelligence", "importance": "critical", "description": "Build interactive dashboards, design KPI reports, and present data insights to business stakeholders.", "typicalLevel": "intermediate" },
+        { "skillName": "Excel / Google Sheets", "skillCategory": "Business Tools", "importance": "critical", "description": "Advanced formulas, pivot tables, Power Query, and VBA macros for ad-hoc analysis. Still the most common tool for business reporting in HK.", "typicalLevel": "advanced" },
+        { "skillName": "Statistics & A/B Testing", "skillCategory": "Analytics & Statistics", "importance": "recommended", "description": "Hypothesis testing, confidence intervals, regression analysis, and experimental design for business decision-making.", "typicalLevel": "intermediate" },
+        { "skillName": "R", "skillCategory": "Programming Languages", "importance": "nice-to-have", "description": "Statistical computing language. Valued in clinical research and some financial analytics roles. Python often preferred in HK tech sector.", "typicalLevel": "basic" },
+        { "skillName": "ETL / Data Pipeline", "skillCategory": "Data Engineering", "importance": "recommended", "description": "Understanding of data extraction, transformation, and loading workflows. Increasingly expected as data infrastructure matures.", "typicalLevel": "basic" },
+        { "skillName": "Cloud Basics (Azure / AWS)", "skillCategory": "Cloud & Infrastructure", "importance": "nice-to-have", "description": "Familiarity with cloud data services (Azure Data Factory, AWS Glue, BigQuery) is a strong differentiator for entry-level candidates.", "typicalLevel": "basic" },
+        { "skillName": "Business Communication (English)", "skillCategory": "Professional Communication", "importance": "critical", "description": "Present findings to non-technical stakeholders, write clear analytical reports, and create executive summaries.", "typicalLevel": "intermediate" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "recommended", "description": "Important for stakeholder interaction in local HK companies and government projects. Less critical at MNCs but opens more job opportunities.", "typicalLevel": "business-proficient" },
+        { "skillName": "Git & Version Control", "skillCategory": "Software Development Practices", "importance": "nice-to-have", "description": "Version control for collaborative analytics projects. Increasingly expected in tech-forward data teams.", "typicalLevel": "basic" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "nice-to-have", "description": "Useful for roles involving cross-border Greater Bay Area projects or mainland Chinese clients.", "typicalLevel": "conversational" }
+      ]
+    },
+    {
+      "roleTitle": "Software Engineer",
+      "roleTitleZh": "軟件工程師",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 22,000 – 35,000/month",
+      "growthOutlook": "Steady demand in HK, particularly in fintech, virtual banking, and enterprise software. Graduate programmes available from FDM, Accenture, and major banks. Remote/hybrid work increasingly common.",
+      "hiringIndustries": ["Technology & IT", "Banking & Finance", "Professional Services", "Retail & E-commerce"],
+      "requiredSkills": [
+        { "skillName": "Java", "skillCategory": "Programming Languages", "importance": "critical", "description": "Most commonly requested language in HK enterprise and banking software roles. Spring Boot framework knowledge expected.", "typicalLevel": "intermediate" },
+        { "skillName": "Python", "skillCategory": "Programming Languages", "importance": "critical", "description": "Used for backend services, scripting, automation, and increasingly for AI/ML integration in applications.", "typicalLevel": "intermediate" },
+        { "skillName": "JavaScript / TypeScript", "skillCategory": "Programming Languages", "importance": "critical", "description": "Core for web development. React.js and Node.js are the most in-demand frameworks in Hong Kong.", "typicalLevel": "intermediate" },
+        { "skillName": "SQL", "skillCategory": "Databases", "importance": "critical", "description": "Database querying, schema design, and optimization. MySQL and PostgreSQL most common in HK.", "typicalLevel": "intermediate" },
+        { "skillName": "Git & GitHub", "skillCategory": "Software Development Practices", "importance": "critical", "description": "Version control and collaborative development. Essential for any software engineering role.", "typicalLevel": "intermediate" },
+        { "skillName": "Agile / Scrum", "skillCategory": "Software Development Practices", "importance": "recommended", "description": "Understanding of agile methodologies, sprint planning, and iterative development. Standard practice in most HK tech teams.", "typicalLevel": "basic" },
+        { "skillName": "Cloud Services (AWS / Azure)", "skillCategory": "Cloud & Infrastructure", "importance": "recommended", "description": "Deploying and managing applications on cloud platforms. Azure is particularly common in HK enterprise environments.", "typicalLevel": "basic" },
+        { "skillName": "Docker & Containers", "skillCategory": "Cloud & Infrastructure", "importance": "recommended", "description": "Containerization for development and deployment. Increasingly expected in modern software teams.", "typicalLevel": "basic" },
+        { "skillName": "REST API Development", "skillCategory": "Software Development Practices", "importance": "critical", "description": "Design and implementation of RESTful APIs. Core skill for backend and full-stack roles.", "typicalLevel": "intermediate" },
+        { "skillName": "Unit Testing", "skillCategory": "Software Development Practices", "importance": "recommended", "description": "Writing and maintaining test suites. Understanding of TDD principles.", "typicalLevel": "basic" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Essential for technical documentation, code comments, and communication in multinational teams.", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "recommended", "description": "Preferred for local company communication. Less critical at MNCs and tech startups.", "typicalLevel": "conversational" }
+      ]
+    },
+    {
+      "roleTitle": "Business Intelligence Developer",
+      "roleTitleZh": "商業智能開發者",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 25,000 – 38,000/month",
+      "growthOutlook": "HK firms increasingly investing in data-driven decision making. BI skills in demand across banking, logistics, and retail. Median entry salary ~HK$510K/year (IBM/Coursera data).",
+      "hiringIndustries": ["Technology & IT", "Banking & Finance", "Logistics & Supply Chain", "Retail & E-commerce"],
+      "requiredSkills": [
+        { "skillName": "SQL", "skillCategory": "Databases", "importance": "critical", "description": "Advanced query writing, performance optimization, and data modeling. The single most essential BI skill.", "typicalLevel": "advanced" },
+        { "skillName": "Data Visualization (Tableau / Power BI)", "skillCategory": "Business Intelligence", "importance": "critical", "description": "Build, publish, and maintain interactive dashboards and reports. Power BI is especially valued in HK enterprises.", "typicalLevel": "intermediate" },
+        { "skillName": "Python", "skillCategory": "Programming Languages", "importance": "recommended", "description": "Data manipulation with pandas, ETL scripting, and automation of reporting workflows.", "typicalLevel": "intermediate" },
+        { "skillName": "ETL / Data Pipeline", "skillCategory": "Data Engineering", "importance": "critical", "description": "Design and maintain data pipelines using SSIS, Azure Data Factory, or Apache Airflow. Core to the BI developer role.", "typicalLevel": "intermediate" },
+        { "skillName": "Data Warehousing", "skillCategory": "Data Engineering", "importance": "critical", "description": "Understanding of star/snowflake schema design, dimensional modeling, and data warehouse architecture.", "typicalLevel": "intermediate" },
+        { "skillName": "Excel / Google Sheets", "skillCategory": "Business Tools", "importance": "critical", "description": "Advanced Excel including Power Query and Power Pivot for data modeling and ad-hoc analysis.", "typicalLevel": "advanced" },
+        { "skillName": "Cloud Data Services (Azure / AWS)", "skillCategory": "Cloud & Infrastructure", "importance": "recommended", "description": "Azure Synapse, Databricks, or AWS Redshift for cloud-based data warehousing and analytics.", "typicalLevel": "basic" },
+        { "skillName": "Business Communication (English)", "skillCategory": "Professional Communication", "importance": "critical", "description": "Translate business requirements into technical solutions and present insights to stakeholders.", "typicalLevel": "intermediate" },
+        { "skillName": "Agile / Scrum", "skillCategory": "Project Management", "importance": "recommended", "description": "Work within agile teams, participate in sprint planning, and deliver BI features iteratively.", "typicalLevel": "basic" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "recommended", "description": "Valuable for understanding business requirements from local stakeholders.", "typicalLevel": "business-proficient" }
+      ]
+    },
+    {
+      "roleTitle": "AI / Machine Learning Engineer",
+      "roleTitleZh": "人工智能/機器學習工程師",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 28,000 – 45,000/month",
+      "growthOutlook": "Explosive growth in HK, accelerated by GenAI adoption and government smart city initiatives. HKSTP and Cyberport incubating AI startups. Strong demand from fintech, insurtech, and enterprise AI teams.",
+      "hiringIndustries": ["Technology & IT", "Banking & Finance", "Healthcare & Pharmaceuticals", "Logistics & Supply Chain"],
+      "requiredSkills": [
+        { "skillName": "Python", "skillCategory": "Programming Languages", "importance": "critical", "description": "Primary language for ML/AI development. Deep proficiency in NumPy, pandas, and ML frameworks essential.", "typicalLevel": "advanced" },
+        { "skillName": "Machine Learning (scikit-learn / TensorFlow / PyTorch)", "skillCategory": "AI & Machine Learning", "importance": "critical", "description": "Build, train, evaluate, and deploy ML models. Understanding of supervised and unsupervised learning techniques.", "typicalLevel": "intermediate" },
+        { "skillName": "SQL", "skillCategory": "Databases", "importance": "critical", "description": "Extract and prepare training data from databases. Feature engineering at scale.", "typicalLevel": "intermediate" },
+        { "skillName": "Deep Learning / NLP", "skillCategory": "AI & Machine Learning", "importance": "recommended", "description": "Experience with transformer models, LLMs, and NLP techniques. Increasingly expected as GenAI adoption grows.", "typicalLevel": "basic" },
+        { "skillName": "MLOps / Model Deployment", "skillCategory": "AI & Machine Learning", "importance": "recommended", "description": "Deploy models to production using Docker, MLflow, or cloud ML platforms. Understanding of model monitoring.", "typicalLevel": "basic" },
+        { "skillName": "Cloud AI Services (Azure AI / AWS SageMaker)", "skillCategory": "Cloud & Infrastructure", "importance": "recommended", "description": "Leverage cloud-based AI services for model training and deployment. Azure AI is particularly relevant in HK.", "typicalLevel": "basic" },
+        { "skillName": "Git & Version Control", "skillCategory": "Software Development Practices", "importance": "critical", "description": "Collaborative development, experiment tracking, and code review in ML teams.", "typicalLevel": "intermediate" },
+        { "skillName": "Statistics & Probability", "skillCategory": "Analytics & Statistics", "importance": "critical", "description": "Strong foundation in probability theory, statistical inference, and experimental design for model validation.", "typicalLevel": "intermediate" },
+        { "skillName": "R", "skillCategory": "Programming Languages", "importance": "nice-to-have", "description": "Statistical computing. Some research-oriented AI roles prefer R for prototyping.", "typicalLevel": "basic" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Essential for reading research papers, technical documentation, and collaboration in the global AI community.", "typicalLevel": "business-proficient" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "recommended", "description": "Useful for collaborating with mainland Chinese AI teams and accessing Chinese-language AI resources.", "typicalLevel": "conversational" }
+      ]
+    },
+    {
+      "roleTitle": "IT Project Manager",
+      "roleTitleZh": "資訊科技項目經理",
+      "isEntryLevel": false,
+      "typicalSalary": "HKD 30,000 – 50,000/month",
+      "growthOutlook": "Steady demand in HK across all sectors. Government T-contract projects, financial services tech, and enterprise digital transformation driving hiring. Entry via Project Coordinator/PMO roles for graduates.",
+      "hiringIndustries": ["Technology & IT", "Banking & Finance", "Government & Public Sector", "Professional Services"],
+      "requiredSkills": [
+        { "skillName": "Agile / Scrum", "skillCategory": "Project Management", "importance": "critical", "description": "Lead sprint planning, daily standups, retrospectives, and manage sprint backlogs. Scrum Master certification valued.", "typicalLevel": "intermediate" },
+        { "skillName": "Project Management (Waterfall / Hybrid)", "skillCategory": "Project Management", "importance": "critical", "description": "Gantt charts, critical path analysis, milestone planning, and project budgeting. PMP or PRINCE2 knowledge expected.", "typicalLevel": "intermediate" },
+        { "skillName": "JIRA / Confluence", "skillCategory": "Software Development Practices", "importance": "critical", "description": "Track project progress, manage backlogs, and document project artifacts. Standard tools in HK IT teams.", "typicalLevel": "intermediate" },
+        { "skillName": "Stakeholder Management", "skillCategory": "Professional Communication", "importance": "critical", "description": "Manage expectations across technical teams, business stakeholders, and external vendors. Create status reports and executive presentations.", "typicalLevel": "intermediate" },
+        { "skillName": "Risk Management", "skillCategory": "Project Management", "importance": "recommended", "description": "Identify, assess, and mitigate project risks. Create risk registers and contingency plans.", "typicalLevel": "basic" },
+        { "skillName": "SDLC Knowledge", "skillCategory": "Software Development Practices", "importance": "critical", "description": "Understanding of the full software development lifecycle including requirements gathering, design, development, testing, and deployment.", "typicalLevel": "intermediate" },
+        { "skillName": "Cloud Basics (Azure / AWS)", "skillCategory": "Cloud & Infrastructure", "importance": "recommended", "description": "Understanding of cloud infrastructure concepts to manage cloud migration and SaaS implementation projects.", "typicalLevel": "basic" },
+        { "skillName": "Budgeting & Resource Planning", "skillCategory": "Finance & Accounting", "importance": "recommended", "description": "Manage project budgets, track costs, and plan resource allocation across project phases.", "typicalLevel": "basic" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Essential for communication in multinational IT teams, vendor management, and documentation.", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "critical", "description": "Required for local stakeholder communication, government projects, and managing local vendor relationships.", "typicalLevel": "business-proficient" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "recommended", "description": "Increasingly important for managing cross-border IT projects and mainland vendor relationships.", "typicalLevel": "conversational" }
+      ]
+    }
+  ]
+}

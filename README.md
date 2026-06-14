@@ -105,3 +105,64 @@ React SPA (Vite + TypeScript)  →  Azure Functions (Python)  →  Azure OpenAI 
 - **Frontend:** React 19, TypeScript, Vite 8, react-router-dom 7
 - **Backend:** Azure Functions (Python), Azure OpenAI, Azure AI Search, Cosmos DB
 - **PDF Parsing:** pdfjs-dist 6
+
+---
+
+## Hong Kong Job Market Data
+
+The `data/` directory contains a structured taxonomy of Hong Kong job roles, required skills, salary benchmarks, and industry insights. This data feeds **Azure AI Search**, which serves as the knowledge layer for GPT-4o to generate personalized skills tables.
+
+### Data Coverage
+
+| Metric | Value |
+|--------|-------|
+| Total roles | 20 |
+| Industry sectors | 10 |
+| Skill categories | 16 |
+| Skill-role pairs (search documents) | 210 |
+| HK & Macau universities | 23 |
+
+### Data Directory Structure
+
+```
+data/
+├── README.md                       # Full documentation with usage guide
+├── taxonomy/
+│   ├── skill_categories.json       # 16 controlled skill categories
+│   ├── industry_sectors.json       # 10 HK industry sectors
+│   └── importance_levels.json      # critical / recommended / nice-to-have
+├── roles/
+│   ├── technology_data.json        # 5 roles: Data Analyst, SWE, BI Dev, AI/ML Eng, IT PM
+│   ├── finance_banking.json        # 5 roles: IB Analyst, Risk, Wealth Mgmt, Fintech, Compliance
+│   ├── professional_services.json  # 4 roles: Mgmt Consultant, Audit, ESG, HR
+│   ├── marketing_ecommerce.json    # 3 roles: Digital Mktg, Product Mgr, E-commerce Ops
+│   └── engineering_logistics.json  # 3 roles: Civil Eng, Supply Chain, Building Services
+├── skills/
+│   ├── skills_index.json           # Generated: 210 flat skill-role documents for AI Search
+│   └── skills_summary.json         # Generated: role-level summary with skill counts
+├── market_data/
+│   ├── salary_benchmarks.json      # Entry-level salary bands by sector
+│   ├── industry_insights.json      # HK hiring trends, in-demand roles, key skills
+│   └── hk_universities.json        # Complete list of HK + Macau institutions
+└── scripts/
+    ├── validate_schema.py          # Validates role files against taxonomy
+    └── generate_search_docs.py     # Transforms role files → AI Search documents
+```
+
+### How to Use the Data Scripts
+
+```bash
+cd data/scripts
+
+# Validate all role files against the taxonomy
+python validate_schema.py
+
+# Generate flat AI Search documents from role files
+python generate_search_docs.py
+```
+
+### Data Sources
+
+Data was curated in June 2026 from CTgoodjobs 2025 Graduate Salary Survey, HKBU GBA Pay Survey, JIJIS, Glassdoor HK, employer graduate programme pages (Morgan Stanley, UBS, Citi, Big 4, FDM Group, Accenture), HK Labour Department LMI reports, and HK Government Census & Statistics Department.
+
+See `data/README.md` for full documentation.

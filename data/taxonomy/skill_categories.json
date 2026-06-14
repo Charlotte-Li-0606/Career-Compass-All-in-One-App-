@@ -1,0 +1,86 @@
+{
+  "description": "Controlled vocabulary of skill categories used across all role data files. Each skill in a role's requiredSkills array must reference one of these categories.",
+  "lastUpdated": "2026-06-13",
+  "categories": [
+    {
+      "name": "Programming Languages",
+      "description": "General-purpose and domain-specific programming languages for software development, scripting, and automation.",
+      "examples": ["Python", "Java", "JavaScript", "C++", "R", "Go", "TypeScript", "C#"]
+    },
+    {
+      "name": "Databases",
+      "description": "Relational and non-relational database systems, query languages, and data modeling.",
+      "examples": ["SQL", "MySQL", "PostgreSQL", "MongoDB", "Redis", "Oracle", "Database Design"]
+    },
+    {
+      "name": "Business Intelligence",
+      "description": "Data visualization, reporting, and dashboarding tools for business analytics.",
+      "examples": ["Tableau", "Power BI", "Looker", "Qlik", "Google Data Studio"]
+    },
+    {
+      "name": "Data Engineering",
+      "description": "Data pipeline development, ETL/ELT processes, and data warehousing.",
+      "examples": ["Apache Spark", "Airflow", "dbt", "Snowflake", "ETL", "Data Pipeline"]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "description": "Cloud platforms, containerization, infrastructure-as-code, and DevOps practices.",
+      "examples": ["Azure", "AWS", "Docker", "Kubernetes", "Terraform", "CI/CD"]
+    },
+    {
+      "name": "AI & Machine Learning",
+      "description": "Machine learning frameworks, deep learning, MLOps, and AI model deployment.",
+      "examples": ["scikit-learn", "TensorFlow", "PyTorch", "MLflow", "NLP", "Computer Vision"]
+    },
+    {
+      "name": "Analytics & Statistics",
+      "description": "Statistical methods, experimental design, quantitative analysis, and data interpretation.",
+      "examples": ["Hypothesis Testing", "Regression", "A/B Testing", "Time Series", "Statistical Modeling"]
+    },
+    {
+      "name": "Software Development Practices",
+      "description": "Version control, testing, CI/CD, code review, and agile methodologies.",
+      "examples": ["Git", "GitHub", "Agile/Scrum", "Unit Testing", "Code Review", "JIRA"]
+    },
+    {
+      "name": "Cybersecurity",
+      "description": "Information security, network security, risk assessment, and compliance frameworks.",
+      "examples": ["Network Security", "SIEM", "Penetration Testing", "ISO 27001", "Risk Assessment"]
+    },
+    {
+      "name": "Business Tools",
+      "description": "Productivity and business analysis software used across industries.",
+      "examples": ["Excel", "PowerPoint", "Google Workspace", "Microsoft 365", "Notion"]
+    },
+    {
+      "name": "Professional Communication",
+      "description": "Written and verbal business communication, presentation, and stakeholder management skills.",
+      "examples": ["Report Writing", "Presentation", "Stakeholder Management", "Client Communication"]
+    },
+    {
+      "name": "Project Management",
+      "description": "Project planning, execution, delivery methodologies, and team coordination.",
+      "examples": ["Agile", "Scrum", "PMBOK", "PRINCE2", "Risk Management", "Sprint Planning"]
+    },
+    {
+      "name": "Design & UX",
+      "description": "User experience research, interface design, and prototyping.",
+      "examples": ["Figma", "User Research", "Wireframing", "Prototyping", "Usability Testing"]
+    },
+    {
+      "name": "Finance & Accounting",
+      "description": "Financial analysis, accounting principles, valuation, and regulatory knowledge.",
+      "examples": ["Financial Modeling", "IFRS", "Bloomberg Terminal", "Valuation", "Risk Management"]
+    },
+    {
+      "name": "Domain Knowledge",
+      "description": "Industry-specific knowledge required for certain roles, typically learned on the job.",
+      "examples": ["Banking Operations", "Healthcare Regulations", "Supply Chain", "ESG Standards"]
+    },
+    {
+      "name": "Languages",
+      "description": "Spoken and written language proficiency relevant to the Hong Kong and Greater Bay Area job market.",
+      "examples": ["Cantonese", "Mandarin", "English", "Portuguese"]
+    }
+  ]
+}
