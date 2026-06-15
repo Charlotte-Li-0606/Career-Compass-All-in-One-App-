@@ -1,0 +1,88 @@
+{
+  "sector": "Professional Services",
+  "subSector": "Consulting & Advisory",
+  "lastUpdated": "2026-06-13",
+  "source": "Curated from Big 4 (Deloitte, PwC, EY, KPMG) HK graduate programme pages, McKinsey/Bain/BCG HK entry requirements, HKIHRM reports, Glassdoor HK, CTgoodjobs, and talent.gov.hk (2025-2026)",
+  "roles": [
+    {
+      "roleTitle": "Management Consultant",
+      "roleTitleZh": "管理顧問",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 30,000 – 45,000/month (MBB); HKD 22,000 – 32,000/month (Big 4 advisory)",
+      "growthOutlook": "Strong demand in HK driven by digital transformation, post-merger integration, and ESG consulting. Competitive entry with case interviews. MBB and Big 4 run structured graduate programmes annually.",
+      "hiringIndustries": ["Professional Services", "Banking & Finance", "Technology & IT"],
+      "requiredSkills": [
+        { "skillName": "Structured Problem Solving", "skillCategory": "Professional Communication", "importance": "critical", "description": "Break down complex business problems into structured frameworks (MECE). Apply hypothesis-driven approach to analysis. Core consulting skill tested in case interviews.", "typicalLevel": "advanced" },
+        { "skillName": "Excel / PowerPoint", "skillCategory": "Business Tools", "importance": "critical", "description": "Build financial models and quantitative analyses in Excel; create client-ready presentations and storylines in PowerPoint. Daily tools for all consultants.", "typicalLevel": "advanced" },
+        { "skillName": "Data Analysis & Quantitative Reasoning", "skillCategory": "Analytics & Statistics", "importance": "critical", "description": "Analyze business data, build business cases, perform market sizing, and derive insights from quantitative analysis.", "typicalLevel": "intermediate" },
+        { "skillName": "Stakeholder Communication", "skillCategory": "Professional Communication", "importance": "critical", "description": "Present findings to C-level clients, facilitate workshops, manage difficult conversations, and build trusted advisor relationships.", "typicalLevel": "intermediate" },
+        { "skillName": "Financial Analysis", "skillCategory": "Finance & Accounting", "importance": "recommended", "description": "Read and interpret financial statements, build basic financial models, and understand key business metrics and drivers.", "typicalLevel": "intermediate" },
+        { "skillName": "SQL / Data Visualization", "skillCategory": "Business Intelligence", "importance": "recommended", "description": "Increasingly expected in data-driven consulting. Ability to query databases and build dashboards for client deliverables.", "typicalLevel": "basic" },
+        { "skillName": "Agile / Project Management", "skillCategory": "Project Management", "importance": "recommended", "description": "Manage workstreams within larger engagements, track project timelines, and coordinate cross-functional teams.", "typicalLevel": "basic" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Fluent English essential for client deliverables, presentations, and communication in all major consulting firms in HK.", "typicalLevel": "advanced" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "recommended", "description": "Important for local client engagements and government consulting projects. Less critical at MBB for international projects.", "typicalLevel": "business-proficient" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "recommended", "description": "Increasingly valued for cross-border projects and serving mainland Chinese clients expanding internationally.", "typicalLevel": "business-proficient" }
+      ]
+    },
+    {
+      "roleTitle": "Audit Associate",
+      "roleTitleZh": "審計助理",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 18,000 – 25,000/month",
+      "growthOutlook": "Big 4 (PwC, Deloitte, EY, KPMG) hire hundreds of audit graduates annually in HK. Structured career path with professional qualification support (HKICPA/ACCA). High turnover creates consistent demand. Peak season (Jan-Mar) involves long hours.",
+      "hiringIndustries": ["Professional Services", "Banking & Finance"],
+      "requiredSkills": [
+        { "skillName": "Accounting Standards (HKFRS / IFRS)", "skillCategory": "Finance & Accounting", "importance": "critical", "description": "Understanding of Hong Kong Financial Reporting Standards and International Financial Reporting Standards. Tested in professional exams and used daily.", "typicalLevel": "intermediate" },
+        { "skillName": "Excel", "skillCategory": "Business Tools", "importance": "critical", "description": "Manipulate large datasets, perform analytical procedures, and prepare audit working papers. Pivot tables and lookup functions essential.", "typicalLevel": "advanced" },
+        { "skillName": "Audit Methodology", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Understanding of audit planning, risk assessment, substantive testing, and sampling methodologies. Knowledge of professional standards (HKSA/ISA).", "typicalLevel": "intermediate" },
+        { "skillName": "Financial Statement Analysis", "skillCategory": "Finance & Accounting", "importance": "critical", "description": "Analyze client financial statements, identify unusual trends, and assess going concern assumptions.", "typicalLevel": "intermediate" },
+        { "skillName": "Attention to Detail", "skillCategory": "Professional Communication", "importance": "critical", "description": "Review financial records, identify discrepancies, and ensure accuracy in audit documentation. Zero tolerance for errors in professional services.", "typicalLevel": "advanced" },
+        { "skillName": "MS Word / Audit Software", "skillCategory": "Business Tools", "importance": "recommended", "description": "Prepare audit reports, management letters, and use audit management software (CaseWare, Teammate, or firm-specific tools).", "typicalLevel": "intermediate" },
+        { "skillName": "Team Collaboration", "skillCategory": "Professional Communication", "importance": "critical", "description": "Work in audit teams of 3-10 members under tight deadlines. Support senior associates and communicate progress clearly.", "typicalLevel": "intermediate" },
+        { "skillName": "Tax Basics", "skillCategory": "Finance & Accounting", "importance": "nice-to-have", "description": "Basic understanding of HK profits tax, salaries tax, and tax compliance. Some audit roles involve tax provision work.", "typicalLevel": "basic" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Essential for audit documentation, professional correspondence, and working with international clients and IFRS standards.", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "critical", "description": "Required for communication with local HK clients, understanding Chinese-language financial records, and internal team communication.", "typicalLevel": "business-proficient" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "recommended", "description": "Useful for audit engagements with mainland Chinese subsidiaries and working with PRC-based colleagues.", "typicalLevel": "conversational" }
+      ]
+    },
+    {
+      "roleTitle": "ESG Analyst",
+      "roleTitleZh": "環境社會管治分析師",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 22,000 – 35,000/month",
+      "growthOutlook": "HKEX mandatory ESG reporting driving rapid demand growth. HK government's green finance agenda and carbon neutrality targets creating new roles. Relatively new field with less experienced competition — good entry opportunity for graduates.",
+      "hiringIndustries": ["Professional Services", "Banking & Finance", "Engineering & Construction", "Retail & E-commerce"],
+      "requiredSkills": [
+        { "skillName": "ESG Frameworks (GRI / SASB / TCFD)", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Understanding of major ESG reporting frameworks and standards. Knowledge of HKEX ESG reporting guide and ISSB standards.", "typicalLevel": "intermediate" },
+        { "skillName": "Data Analysis & Excel", "skillCategory": "Business Tools", "importance": "critical", "description": "Collect, organize, and analyze ESG data (carbon emissions, diversity metrics, supply chain sustainability). Build ESG scorecards.", "typicalLevel": "intermediate" },
+        { "skillName": "Stakeholder Engagement", "skillCategory": "Professional Communication", "importance": "critical", "description": "Engage with internal departments to gather ESG data, conduct stakeholder surveys, and present ESG performance to management and investors.", "typicalLevel": "intermediate" },
+        { "skillName": "Carbon Accounting", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Understanding of Scope 1/2/3 emissions, carbon footprint calculation methodologies, and net-zero target setting.", "typicalLevel": "basic" },
+        { "skillName": "Regulatory Knowledge (HKEX ESG / SFC Climate)", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Knowledge of HKEX ESG reporting requirements, SFC climate risk management guidelines, and HKMA green and sustainable banking principles.", "typicalLevel": "basic" },
+        { "skillName": "Report Writing", "skillCategory": "Professional Communication", "importance": "critical", "description": "Draft ESG reports, sustainability disclosures, and client deliverables. Clear, concise writing for investor and regulatory audiences.", "typicalLevel": "intermediate" },
+        { "skillName": "SQL / Python", "skillCategory": "Programming Languages", "importance": "nice-to-have", "description": "Automate ESG data collection and analysis. Increasingly valuable as ESG data management scales up.", "typicalLevel": "basic" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "ESG reporting and investor communication is predominantly English-language. Essential for understanding global ESG frameworks.", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese / Mandarin", "skillCategory": "Languages", "importance": "recommended", "description": "Useful for stakeholder engagement with local HK companies and understanding China-specific ESG regulations.", "typicalLevel": "conversational" }
+      ]
+    },
+    {
+      "roleTitle": "HR Specialist",
+      "roleTitleZh": "人力資源專員",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 18,000 – 28,000/month",
+      "growthOutlook": "Steady demand across all HK sectors. Growing specialization in HR analytics, employer branding, and talent development. Digital HR transformation creating new roles. Graduate programmes at major employers and HR consultancies.",
+      "hiringIndustries": ["Professional Services", "Banking & Finance", "Technology & IT", "Retail & E-commerce", "Government & Public Sector"],
+      "requiredSkills": [
+        { "skillName": "HK Employment Ordinance", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Understanding of HK labour laws, employment contracts, MPF regulations, and employee rights. Fundamental for any HK HR role.", "typicalLevel": "intermediate" },
+        { "skillName": "Recruitment & Selection", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Sourcing candidates, conducting interviews, assessment centre design, and managing the end-to-end hiring process.", "typicalLevel": "intermediate" },
+        { "skillName": "HRIS / HR Software", "skillCategory": "Business Tools", "importance": "recommended", "description": "Use HR information systems (SAP SuccessFactors, Workday, or local systems like IPL HRMS) for employee data management.", "typicalLevel": "basic" },
+        { "skillName": "Excel / Data Analysis", "skillCategory": "Business Tools", "importance": "critical", "description": "Analyze headcount data, turnover metrics, compensation benchmarks, and create HR reports for management.", "typicalLevel": "intermediate" },
+        { "skillName": "Talent Development & Training", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Design training programmes, conduct learning needs analysis, and manage employee development initiatives.", "typicalLevel": "basic" },
+        { "skillName": "Employee Relations", "skillCategory": "Professional Communication", "importance": "critical", "description": "Handle employee grievances, mediate conflicts, conduct exit interviews, and maintain positive workplace culture.", "typicalLevel": "intermediate" },
+        { "skillName": "Compensation & Benefits Basics", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Understanding of salary benchmarking, bonus structures, benefits administration, and annual salary review processes.", "typicalLevel": "basic" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "critical", "description": "Essential for communicating with local employees, handling employee relations matters, and understanding HK employment context.", "typicalLevel": "business-proficient" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Required for policy documentation, expatriate management, and communication in multinational organizations.", "typicalLevel": "business-proficient" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "recommended", "description": "Increasingly useful for organizations with mainland Chinese operations, cross-border hiring, and working with PRC-based HR counterparts.", "typicalLevel": "conversational" }
+      ]
+    }
+  ]
+}

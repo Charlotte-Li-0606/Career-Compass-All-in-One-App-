@@ -1,0 +1,27 @@
+{
+  "description": "Definitions for the three importance levels used to classify how essential a skill is for a given role. Maps to the frontend ImportanceLevel type (critical | recommended | nice-to-have).",
+  "lastUpdated": "2026-06-13",
+  "levels": [
+    {
+      "value": "critical",
+      "label": "Critical",
+      "description": "Must-have skill. The role cannot be performed without it. Employers will filter candidates on this. Should appear in every relevant job description.",
+      "frontendBadge": "CRITICAL",
+      "weight": 3
+    },
+    {
+      "value": "recommended",
+      "label": "Recommended",
+      "description": "Strongly preferred skill. Frequently listed in job descriptions. Having this skill significantly improves candidacy, but some roles may accept candidates willing to learn it on the job.",
+      "frontendBadge": "REC",
+      "weight": 2
+    },
+    {
+      "value": "nice-to-have",
+      "label": "Nice to Have",
+      "description": "Differentiator skill. Not required, but sets candidates apart. Often listed under 'bonus' or 'preferred' in job descriptions. Good for career growth but not a barrier to entry.",
+      "frontendBadge": "NICE",
+      "weight": 1
+    }
+  ]
+}
