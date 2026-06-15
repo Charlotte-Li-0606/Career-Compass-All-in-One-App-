@@ -1,225 +1,158 @@
 # Career Compass AI Backend
 
-## Overview
+AI-powered backend service for Career Compass.
 
-Career Compass AI is an AI-powered career guidance backend system designed to help university students make better career decisions.
+## Features
 
-The system uses a Large Language Model (LLM) hosted on Azure AI Foundry to provide personalized career analysis, technical skill gap evaluation, and resume optimization.
+### Feature 1 – Resume Analysis
 
-The backend exposes RESTful APIs through FastAPI and provides AI-generated career recommendations based on student profiles, target roles, and job descriptions.
+Analyze uploaded resumes and provide:
 
----
+* Resume score
+* Strengths
+* Weaknesses
+* Improvement suggestions
 
-# Features
+### Feature 2 – Resume Tailoring
 
-## 1. Student Profile & Career Analysis
+Compare resume against job descriptions and provide:
 
-Analyze a student's academic background, interests, GPA, and previous experiences.
+* Match score
+* Missing skills
+* Tailored recommendations
 
-The system generates:
+### Feature 3 – Career Roadmap
 
-* Career snapshot
-* Recommended career paths
-* Current strengths
-* Skill gaps
-* Personalized learning roadmap
+Generate personalized career development plans.
 
----
+### Feature 4 – Interview Question Generator
 
-## 2. Technical Skill Gap Analysis
+Generate interview questions based on:
 
-Evaluate the difference between a student's current skills and the requirements of a target career role.
+* Resume
+* Job description
+* Target role
 
-The system provides:
+### Feature 5 – Follow-up Interview Questions
 
-* Required technical skills
-* Current skill assessment
-* Skill gaps
-* Priority ranking
-* Learning plan
+Generate dynamic follow-up questions according to candidate answers.
 
----
+### Feature 6 – Interview Performance Report
 
-## 3. Resume Optimization
+Generate structured interview evaluation reports including:
 
-Analyze a student's resume against a target job description.
-
-The system provides:
-
-* Resume compatibility analysis
-* Missing keywords
-* Weak resume sections
-* Rewrite suggestions
-
-The model is instructed not to fabricate projects, achievements, or technical experience.
+* Technical skills
+* Communication
+* Problem-solving
+* Overall performance
 
 ---
 
-# System Architecture
+## Tech Stack
 
-```
-User / Frontend
-        |
-        |
-        v
-FastAPI Backend
-        |
-        |
-        v
-LLM Service Layer
-        |
-        |
-        v
-Azure AI Foundry
-        |
-        |
-        v
-Phi-4-mini-instruct
-```
-
----
-
-# Tech Stack
-
-## Backend
-
-* Python
 * FastAPI
-* Pydantic
-* Uvicorn
-
-## AI
-
-* Azure AI Foundry
-* Phi-4-mini-instruct
+* Python
+* Azure OpenAI
 * OpenAI Python SDK
-
-## Configuration
-
 * python-dotenv
 
 ---
 
-# Project Structure
-
-```
-CareerCompass-Backend
-
-│
-├── app.py
-├── llm_service.py
-├── schemas.py
-│
-├── cache.json
-│
-├── requirements.txt
-│
-├── .env.example
-├── .gitignore
-│
-├── README.md
-│
-└── docs
-    └── API.md
-```
-
----
-
-# Installation
-
-## 1. Clone repository
+## Installation
 
 ```bash
-git clone <repository-url>
-
-cd CareerCompass-Backend
+pip install -r requirements.txt
 ```
-
----
-
-## 2. Install dependencies
-
-```bash
-python -m pip install -r requirements.txt
-```
-
----
-
-## 3. Configure environment variables
 
 Create a `.env` file:
 
 ```env
-AZURE_ENDPOINT=your_azure_endpoint
-
-AZURE_API_KEY=your_api_key
-
-MODEL_NAME=Phi-4-mini-instruct
+AZURE_OPENAI_API_KEY=your_api_key_here
+AZURE_OPENAI_ENDPOINT=https://your-endpoint.openai.azure.com/
+AZURE_OPENAI_MODEL=Phi-4-mini-instruct
+DEMO_MODE=true
 ```
 
----
-
-# Running the Backend
-
-Start FastAPI server:
+Run:
 
 ```bash
 uvicorn app:app --reload
 ```
 
-The API documentation will be available at:
+---
 
+## API Endpoints
+
+### Resume Analysis
+
+POST
+
+```text
+/resume/analyze
 ```
-http://127.0.0.1:8000/docs
+
+### Resume Tailoring
+
+POST
+
+```text
+/resume/tailor
+```
+
+### Career Roadmap
+
+POST
+
+```text
+/career/roadmap
+```
+
+### Interview Questions
+
+POST
+
+```text
+/interview/questions
+```
+
+### Follow-up Questions
+
+POST
+
+```text
+/interview/followup
+```
+
+### Interview Report
+
+POST
+
+```text
+/interview/report
 ```
 
 ---
 
-# API Endpoints
+## Demo Mode
 
-| Feature             | Endpoint              |
-| ------------------- | --------------------- |
-| Profile Analysis    | POST /profile/analyze |
-| Skill Analysis      | POST /skills/analyze  |
-| Resume Optimization | POST /resume/optimize |
+To avoid Azure OpenAI rate-limit issues during development and demonstrations:
 
-Detailed API documentation:
-
+```env
+DEMO_MODE=true
 ```
-docs/API.md
-```
+
+The backend will return predefined responses while preserving the complete API workflow.
 
 ---
 
-# AI Safety Rules
+## Team Contribution
 
-The LLM service follows several constraints:
+Backend Development
 
-* Act as a professional career advisor
-* Avoid casual chatbot behavior
-* Provide actionable recommendations
-* Do not fabricate user experience
-* Do not invent projects or achievements
-* Clearly state assumptions when information is missing
-
----
-
-# Development Notes
-
-The backend currently uses a JSON-based cache layer to reduce repeated LLM requests and avoid unnecessary Azure API calls during development.
-
----
-
-# Future Improvements
-
-Possible future improvements include:
-
-* Frontend integration
-* Structured JSON responses
-* User authentication
-* Database storage
-* Resume file upload
-* Production deployment
-
-```
-```
+* Resume Analysis
+* Resume Tailoring
+* Career Roadmap
+* Interview Question Generation
+* Follow-up Question Generation
+* Interview Report Generation
+* Demo Mode Support

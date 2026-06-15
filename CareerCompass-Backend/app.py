@@ -6,7 +6,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from schemas import (
     ProfileRequest,
     SkillRequest,
-    ResumeRequest
+    ResumeRequest,
+    InterviewQuestionRequest,
+    FollowupRequest,
+    InterviewReportRequest
 )
 
 
@@ -16,6 +19,11 @@ from llm_service import (
     optimize_resume
 )
 
+from interview_service import (
+    generate_interview_questions,
+    generate_followup_question,
+    generate_interview_report
+)
 
 
 app = FastAPI(
@@ -123,4 +131,44 @@ def resume_tailor(
         "result":
         result
 
+    }
+
+
+# =========================
+# Feature 4
+# =========================
+
+
+@app.post("/interview/questions")
+def interview_questions(data: InterviewQuestionRequest):
+
+    return {
+        "result":
+        generate_interview_questions(data)
+    }
+
+
+# =========================
+# Feature 5
+# =========================
+
+@app.post("/interview/followup")
+def interview_followup(data: FollowupRequest):
+
+    return {
+        "result":
+        generate_followup_question(data)
+    }
+
+
+# =========================
+# Feature 6
+# =========================
+
+@app.post("/interview/report")
+def interview_report(data: InterviewReportRequest):
+
+    return {
+        "result":
+        generate_interview_report(data)
     }

@@ -68,3 +68,17 @@ class ResumeRequest(BaseModel):
 class ResumeResponse(BaseModel):
 
     resume_feedback: str
+
+class InterviewQuestionRequest(BaseModel):
+    major: str
+    skills: str
+    target_role: str
+
+
+class FollowupRequest(BaseModel):
+    question: str
+    answer: str
+
+
+class InterviewReportRequest(BaseModel):
+    interview_history: str

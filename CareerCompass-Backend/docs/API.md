@@ -202,3 +202,141 @@ Future versions may replace text responses with structured JSON objects for easi
 
 ```
 ```
+
+# 4. Interview Question Generator
+
+## Endpoint
+
+```
+POST /interview/questions
+```
+
+## Description
+
+Generate personalized mock interview questions based on a student's background and target role.
+
+---
+
+## Request Body
+
+```json
+{
+    "major": "Computer Science",
+    "skills": "Python, SQL, Machine Learning",
+    "target_role": "Data Analyst"
+}
+```
+
+---
+
+## Response
+
+```json
+{
+    "result": "AI generated interview questions"
+}
+```
+
+---
+
+## Generated Content
+
+The response includes:
+
+* Technical Questions
+* Behavioral Questions
+* Situational Questions
+* Role-Specific Questions
+
+---
+
+# 5. Follow-up Question Generator
+
+## Endpoint
+
+```
+POST /interview/followup
+```
+
+## Description
+
+Generate a follow-up interview question based on a candidate's answer.
+
+---
+
+## Request Body
+
+```json
+{
+    "question": "What is overfitting?",
+    "answer": "Overfitting occurs when a model learns noise from training data."
+}
+```
+
+---
+
+## Response
+
+```json
+{
+    "result": "AI generated follow-up question"
+}
+```
+
+---
+
+## Generated Content
+
+The response includes:
+
+* Clarification Questions
+* Deeper Technical Questions
+* Practical Application Questions
+
+---
+
+# 6. Interview Feedback Report
+
+## Endpoint
+
+```
+POST /interview/report
+```
+
+## Description
+
+Analyze interview performance and generate feedback.
+
+---
+
+## Request Body
+
+```json
+{
+    "interview_history": "Q: What is machine learning? A: Machine learning enables systems to learn patterns from data."
+}
+```
+
+---
+
+## Response
+
+```json
+{
+    "result": "AI generated interview report"
+}
+```
+
+---
+
+## Generated Content
+
+The response includes:
+
+* Performance Summary
+* Technical Strengths
+* Weaknesses
+* Communication Assessment
+* Improvement Recommendations
+
+---

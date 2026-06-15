@@ -8,6 +8,12 @@ from openai import RateLimitError
 
 load_dotenv()
 
+DEMO_MODE = (
+    os.getenv("DEMO_MODE", "false")
+    .lower()
+    == "true"
+)
+
 
 MODEL_NAME = os.getenv("MODEL_NAME")
 
@@ -177,6 +183,165 @@ def save_cache(cache):
             indent=4
         )
 
+# =====================================================
+# Demo Response Router
+# =====================================================
+
+def get_demo_response(prompt: str):
+
+    prompt_lower = prompt.lower()
+
+    # Feature 1
+    if "career snapshot" in prompt_lower:
+
+        return """
+Career Snapshot
+
+The student has a solid foundation in computer science and demonstrates interest in AI-related fields.
+
+Recommended Career Paths
+
+1. Data Analyst
+2. Machine Learning Engineer
+3. Business Intelligence Analyst
+
+Current Strengths
+
+- Python programming
+- Analytical thinking
+- SQL fundamentals
+
+Skill Gaps
+
+- Cloud platforms
+- Advanced machine learning
+- Data engineering
+
+Learning Roadmap
+
+0-3 Months:
+Learn advanced SQL and data visualization.
+
+3-6 Months:
+Build machine learning projects.
+
+6-12 Months:
+Deploy AI applications using cloud services.
+"""
+
+    # Feature 2
+    if "technical skill gap analysis" in prompt_lower:
+
+        return """
+Skill Requirement Analysis
+
+Python:
+High Importance
+
+Current Status:
+Intermediate
+
+Gap Level:
+Low
+
+Recommendation:
+Practice production-level coding.
+
+Machine Learning:
+High Importance
+
+Current Status:
+Beginner
+
+Gap Level:
+Medium
+
+Recommendation:
+Complete 2 machine learning projects.
+"""
+
+    # Feature 3
+    if "resume reviewer" in prompt_lower:
+
+        return """
+Resume Match Score
+
+78%
+
+Missing Keywords
+
+- Power BI
+- ETL
+- Dashboard Design
+
+Weak Sections
+
+Project descriptions lack measurable impact.
+
+Rewrite Suggestions
+
+Original:
+Developed a dashboard.
+
+Improved:
+Developed an interactive Power BI dashboard that improved reporting efficiency.
+"""
+
+    # Feature 4
+    if "generate exactly five interview questions" in prompt_lower:
+
+        return """
+{
+  "questions":[
+    "Explain supervised and unsupervised learning.",
+    "How would you optimize a slow SQL query?",
+    "Describe a challenging team project.",
+    "Tell me about a conflict you resolved.",
+    "How would you design a recommendation system?"
+  ]
+}
+"""
+
+    # Feature 5
+    if "generate exactly one follow-up question" in prompt_lower:
+
+        return """
+{
+  "followup":
+  "What trade-offs did you consider before selecting that solution?"
+}
+"""
+
+    # Feature 6
+    if "overall_score" in prompt_lower:
+
+        return """
+{
+  "overall_score":84,
+  "technical_knowledge":82,
+  "communication":88,
+  "problem_solving":83,
+  "strengths":[
+      "Clear communication",
+      "Strong technical foundation",
+      "Logical reasoning"
+  ],
+  "weaknesses":[
+      "Limited real-world examples",
+      "Need deeper system design knowledge",
+      "Some answers lacked detail"
+  ],
+  "improvement_plan":[
+      "Practice weekly mock interviews",
+      "Prepare project case studies",
+      "Study system design basics"
+  ]
+}
+"""
+
+    return "Demo response generated successfully."
+
+
 
 # =====================================================
 # LLM Wrapper
@@ -187,6 +352,16 @@ def call_llm(prompt: str):
 
     prompt = prompt.strip()
 
+    # ================================
+    # Demo Mode
+    # ================================
+
+    if DEMO_MODE:
+
+        print("====== DEMO MODE ======")
+
+        return get_demo_response(prompt)
+        
     cache = load_cache()
 
     cache_key = get_cache_key(prompt)
