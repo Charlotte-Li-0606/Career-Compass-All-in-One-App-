@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://career-compass/schemas/student_profile.json",
+  "title": "StudentProfile",
+  "description": "Cosmos DB document for student_profiles container (partition key: /userId)",
+  "type": "object",
+  "required": ["id", "userId", "major", "year", "university", "updatedAt"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Same as userId — document id"
+    },
+    "userId": {
+      "type": "string",
+      "description": "Partition key — stable user identifier"
+    },
+    "major": { "type": "string" },
+    "year": { "type": "integer", "minimum": 1, "maximum": 6 },
+    "university": { "type": "string" },
+    "interests": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "targetRoles": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "pastInternships": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "extracurriculars": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

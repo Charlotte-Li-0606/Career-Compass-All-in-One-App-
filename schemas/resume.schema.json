@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://career-compass/schemas/resume.json",
+  "title": "ResumeVersion",
+  "description": "Cosmos DB document for resumes container (partition key: /userId)",
+  "type": "object",
+  "required": ["id", "userId", "version", "originalText", "createdAt"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique resume version id (UUID)"
+    },
+    "userId": {
+      "type": "string",
+      "description": "Partition key — owner of this resume version"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Monotonic version number per user"
+    },
+    "originalText": { "type": "string" },
+    "refinedText": { "type": "string" },
+    "instructions": { "type": "string" },
+    "careerContext": { "type": "string" },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": { "enum": ["added", "removed", "modified"] },
+          "description": { "type": "string" },
+          "section": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "createdAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}
