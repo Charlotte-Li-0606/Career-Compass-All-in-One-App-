@@ -1,0 +1,70 @@
+{
+  "sector": "Marketing & E-commerce",
+  "subSector": "Digital Marketing & Product",
+  "lastUpdated": "2026-06-13",
+  "source": "Curated from JobsDB HK, CTgoodjobs, Glassdoor HK, LinkedIn HK, and employer listings from HK-based digital agencies, SHOPLINE, and e-commerce platforms (2025-2026)",
+  "roles": [
+    {
+      "roleTitle": "Digital Marketing Specialist",
+      "roleTitleZh": "數位行銷專員",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 18,000 – 28,000/month",
+      "growthOutlook": "HK digital ad spend growing steadily. Strong demand for performance marketing and social media skills across all industries. E-commerce growth creating more digital marketing roles. HK is a regional marketing hub for APAC.",
+      "hiringIndustries": ["Marketing & E-commerce", "Retail & E-commerce", "Banking & Finance", "Technology & IT"],
+      "requiredSkills": [
+        { "skillName": "Google Ads / Meta Ads Manager", "skillCategory": "Business Tools", "importance": "critical", "description": "Plan, execute, and optimize paid search and social media campaigns. Manage budgets, bid strategies, and audience targeting. Core performance marketing skill.", "typicalLevel": "intermediate" },
+        { "skillName": "Google Analytics", "skillCategory": "Analytics & Statistics", "importance": "critical", "description": "Track website traffic, analyze user behavior, create conversion funnels, and report on campaign ROI.", "typicalLevel": "intermediate" },
+        { "skillName": "SEO / SEM", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "On-page and off-page search engine optimization. Keyword research, content optimization, and technical SEO best practices.", "typicalLevel": "intermediate" },
+        { "skillName": "Social Media Management", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Create and schedule content across Instagram, Facebook, LinkedIn, and Xiaohongshu (Little Red Book) for HK audiences. Community engagement and social listening.", "typicalLevel": "intermediate" },
+        { "skillName": "Content Creation (Photoshop / Canva / CapCut)", "skillCategory": "Design & UX", "importance": "recommended", "description": "Create social media graphics, short-form videos, and visual assets for digital campaigns. Basic design skills increasingly expected.", "typicalLevel": "basic" },
+        { "skillName": "Email Marketing", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Build email campaigns, segment audiences, A/B test subject lines, and track open/click-through rates using Mailchimp or HubSpot.", "typicalLevel": "basic" },
+        { "skillName": "A/B Testing & CRO", "skillCategory": "Analytics & Statistics", "importance": "recommended", "description": "Design and analyze A/B tests for landing pages, ad creative, and email campaigns. Conversion rate optimization fundamentals.", "typicalLevel": "basic" },
+        { "skillName": "Excel / Google Sheets", "skillCategory": "Business Tools", "importance": "critical", "description": "Build campaign performance reports, analyze marketing data, and create budget tracking spreadsheets.", "typicalLevel": "intermediate" },
+        { "skillName": "Chinese Copywriting", "skillCategory": "Professional Communication", "importance": "critical", "description": "Write compelling ad copy, social media posts, and marketing content in Chinese (Traditional Chinese for HK market). Understanding of HK-specific tone and cultural references.", "typicalLevel": "intermediate" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Required for international brand communication, English-language campaigns, and working in multinational marketing teams.", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "critical", "description": "Essential for local HK marketing campaigns, understanding local consumer behavior, and creating culturally relevant content.", "typicalLevel": "native" }
+      ]
+    },
+    {
+      "roleTitle": "Product Manager",
+      "roleTitleZh": "產品經理",
+      "isEntryLevel": false,
+      "typicalSalary": "HKD 28,000 – 45,000/month",
+      "growthOutlook": "Growing demand in HK tech ecosystem. Virtual banks, fintech startups, and e-commerce platforms all hiring PMs. Increasing number of Associate Product Manager (APM) graduate programmes at larger tech companies.",
+      "hiringIndustries": ["Technology & IT", "Banking & Finance", "Marketing & E-commerce", "Retail & E-commerce"],
+      "requiredSkills": [
+        { "skillName": "Product Strategy & Roadmapping", "skillCategory": "Project Management", "importance": "critical", "description": "Define product vision, prioritize features, create product roadmaps, and align stakeholders around product direction.", "typicalLevel": "intermediate" },
+        { "skillName": "User Research & Personas", "skillCategory": "Design & UX", "importance": "critical", "description": "Conduct user interviews, analyze user behavior, create user personas, and translate user needs into product requirements.", "typicalLevel": "intermediate" },
+        { "skillName": "Agile / Scrum", "skillCategory": "Project Management", "importance": "critical", "description": "Write user stories, manage product backlogs, participate in sprint planning, and work closely with engineering teams in agile environments.", "typicalLevel": "intermediate" },
+        { "skillName": "Data Analysis & Metrics", "skillCategory": "Analytics & Statistics", "importance": "critical", "description": "Define KPIs, analyze product metrics (DAU/MAU, retention, conversion), and make data-driven product decisions. SQL basics for querying product data.", "typicalLevel": "intermediate" },
+        { "skillName": "Wireframing / Prototyping (Figma)", "skillCategory": "Design & UX", "importance": "recommended", "description": "Create wireframes and low-fidelity prototypes to communicate product concepts. Figma is the industry standard.", "typicalLevel": "basic" },
+        { "skillName": "A/B Testing", "skillCategory": "Analytics & Statistics", "importance": "recommended", "description": "Design experiments to validate product hypotheses. Understanding of statistical significance and experiment design.", "typicalLevel": "basic" },
+        { "skillName": "Stakeholder Communication", "skillCategory": "Professional Communication", "importance": "critical", "description": "Bridge business, engineering, and design teams. Present product plans to leadership and manage cross-functional expectations.", "typicalLevel": "intermediate" },
+        { "skillName": "Competitive Analysis", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Research competitor products, identify market opportunities, and inform product positioning and differentiation strategy.", "typicalLevel": "basic" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Essential for technical documentation, product specs, and communication in international product teams.", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese / Mandarin", "skillCategory": "Languages", "importance": "recommended", "description": "Important for products targeting HK or Greater China markets. User research and stakeholder communication in local language.", "typicalLevel": "business-proficient" }
+      ]
+    },
+    {
+      "roleTitle": "E-commerce Operations Specialist",
+      "roleTitleZh": "電子商務運營專員",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 18,000 – 28,000/month",
+      "growthOutlook": "HK e-commerce market growing rapidly, accelerated by cross-border e-commerce with mainland China. Platforms like Shopline, Shopify, HKTVmall, and Taobao HK creating operations roles. Digital-savvy fresh graduates in demand.",
+      "hiringIndustries": ["Marketing & E-commerce", "Retail & E-commerce", "Logistics & Supply Chain"],
+      "requiredSkills": [
+        { "skillName": "E-commerce Platforms (Shopify / Shopline / Taobao)", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Manage product listings, inventory, pricing, and order fulfillment on major e-commerce platforms. Understanding of platform-specific tools and analytics.", "typicalLevel": "intermediate" },
+        { "skillName": "Excel / Google Sheets", "skillCategory": "Business Tools", "importance": "critical", "description": "Track inventory levels, analyze sales data, create operations reports, and manage SKU databases.", "typicalLevel": "advanced" },
+        { "skillName": "Digital Marketing Basics (Google Ads / Social Media)", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Coordinate with marketing team on product promotions, understand campaign performance metrics, and optimize product pages for conversion.", "typicalLevel": "basic" },
+        { "skillName": "Inventory & Supply Chain Management", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Manage stock levels, coordinate with suppliers and warehouses, handle logistics arrangements, and resolve fulfillment issues.", "typicalLevel": "intermediate" },
+        { "skillName": "Customer Service & CRM", "skillCategory": "Professional Communication", "importance": "critical", "description": "Handle customer inquiries, manage returns and refunds, and maintain customer satisfaction metrics. Use CRM tools like Salesforce or Zendesk.", "typicalLevel": "intermediate" },
+        { "skillName": "Google Analytics", "skillCategory": "Analytics & Statistics", "importance": "recommended", "description": "Analyze e-commerce traffic, track conversion funnels, and report on sales performance metrics.", "typicalLevel": "basic" },
+        { "skillName": "HTML / CSS Basics", "skillCategory": "Programming Languages", "importance": "nice-to-have", "description": "Make minor updates to product pages, landing pages, and email templates without developer support.", "typicalLevel": "basic" },
+        { "skillName": "Payment & Logistics Systems", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Understanding of HK payment gateways (PayMe, AlipayHK, FPS), cross-border logistics, and customs processes for cross-border e-commerce.", "typicalLevel": "basic" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "critical", "description": "Essential for supplier communication, customer service, and working with local logistics partners in Hong Kong.", "typicalLevel": "business-proficient" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "recommended", "description": "Important for cross-border e-commerce operations, communicating with mainland Chinese suppliers and platforms.", "typicalLevel": "business-proficient" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "recommended", "description": "Useful for international brand partnerships, platform documentation, and working with global e-commerce tools.", "typicalLevel": "business-proficient" }
+      ]
+    }
+  ]
+}

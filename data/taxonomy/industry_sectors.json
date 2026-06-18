@@ -1,0 +1,56 @@
+{
+  "description": "Controlled vocabulary of industry sectors in the Hong Kong job market. Used for sector field in role data files and hiringIndustries references.",
+  "lastUpdated": "2026-06-13",
+  "sectors": [
+    {
+      "name": "Banking & Finance",
+      "description": "Retail banking, investment banking, asset management, private equity, and insurance.",
+      "subSectors": ["Retail Banking", "Investment Banking", "Asset Management", "Private Equity", "Insurance", "Fintech"]
+    },
+    {
+      "name": "Technology & IT",
+      "description": "Software development, IT services, data & analytics, cybersecurity, and AI.",
+      "subSectors": ["Software Development", "IT Services", "Data & Analytics", "Cybersecurity", "AI & Machine Learning", "Cloud Services"]
+    },
+    {
+      "name": "Professional Services",
+      "description": "Consulting, audit & accounting, legal services, ESG, and human resources.",
+      "subSectors": ["Management Consulting", "Audit & Accounting", "Legal Services", "ESG & Sustainability", "Human Resources", "Recruitment"]
+    },
+    {
+      "name": "Marketing & E-commerce",
+      "description": "Digital marketing, brand management, e-commerce, advertising, and public relations.",
+      "subSectors": ["Digital Marketing", "Brand Management", "E-commerce", "Advertising", "Public Relations", "Content Marketing"]
+    },
+    {
+      "name": "Engineering & Construction",
+      "description": "Civil engineering, building services, construction management, and infrastructure development.",
+      "subSectors": ["Civil Engineering", "Building Services", "Construction Management", "Infrastructure", "MEP Engineering"]
+    },
+    {
+      "name": "Logistics & Supply Chain",
+      "description": "Logistics, shipping, supply chain management, procurement, and trade operations.",
+      "subSectors": ["Logistics", "Shipping & Maritime", "Supply Chain", "Procurement", "Trade Operations", "Warehousing"]
+    },
+    {
+      "name": "Retail & E-commerce",
+      "description": "Retail operations, e-commerce platforms, consumer goods, and omni-channel commerce.",
+      "subSectors": ["Fashion & Apparel", "Consumer Electronics", "E-commerce", "Luxury Retail", "Supermarket & FMCG"]
+    },
+    {
+      "name": "Insurance",
+      "description": "Life insurance, general insurance, reinsurance, and insurtech.",
+      "subSectors": ["Life Insurance", "General Insurance", "Reinsurance", "Insurtech", "Bancassurance"]
+    },
+    {
+      "name": "Healthcare & Pharmaceuticals",
+      "description": "Clinical healthcare, pharmaceuticals, medical devices, health informatics, and biotech.",
+      "subSectors": ["Clinical Healthcare", "Pharmaceuticals", "Medical Devices", "Health Informatics", "Biotechnology"]
+    },
+    {
+      "name": "Government & Public Sector",
+      "description": "Hong Kong SAR government, statutory bodies, public utilities, and NGOs.",
+      "subSectors": ["Civil Service", "Statutory Bodies", "Public Utilities", "NGOs & Non-profits", "Education"]
+    }
+  ]
+}
