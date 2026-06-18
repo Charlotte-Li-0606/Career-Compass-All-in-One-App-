@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react'
 import type { UserProfile, CareerSummary, SkillsTable as SkillsTableType } from '../types'
 import { getCareerSummary, getSkillsTable } from '../services/api'
 import { mockCareerSummary, mockSkillsTable } from '../services/mockData'
+import { ROLE_OPTIONS } from '../data/roles'
 import PersonalSummary from '../components/PersonalSummary'
 import SkillsTable from '../components/SkillsTable'
 import ChipInput from '../components/ChipInput'
@@ -30,6 +31,12 @@ export default function CareerProfile() {
   async function handleGenerate(e: FormEvent) {
     e.preventDefault()
     setError(null)
+
+    if (profile.targetRoles.length === 0) {
+      setError('Please select at least one target role.')
+      return
+    }
+
     setLoading(true)
 
     try {
@@ -60,7 +67,6 @@ export default function CareerProfile() {
       <div className="container">
         {/* Header */}
         <div className="section-header">
-          <span className="section-tag">// CAREER_PROFILE</span>
           <h1 className="section-title">Your Career Compass</h1>
           <p className="section-intro">
             Tell me about yourself and I'll map your path — identifying promising roles, industry insights,
@@ -76,7 +82,7 @@ export default function CareerProfile() {
           <form onSubmit={handleGenerate}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div className="form-group">
-                <label className="form-label">Major / Field of Study</label>
+                <label className="form-label">Major / Field of Study <span className="required-star">*</span></label>
                 <input
                   className="form-input"
                   value={profile.major}
@@ -86,7 +92,7 @@ export default function CareerProfile() {
                 />
               </div>
               <div className="form-group">
-                <label className="form-label">Year of Study</label>
+                <label className="form-label">Year of Study <span className="required-star">*</span></label>
                 <select
                   className="form-input"
                   value={profile.year}
@@ -96,28 +102,72 @@ export default function CareerProfile() {
                   <option value={2}>Year 2</option>
                   <option value={3}>Year 3</option>
                   <option value={4}>Year 4</option>
-                  <option value={5}>Postgraduate</option>
+                  <option value={5}>Year 5</option>
+                  <option value={6}>Postgraduate</option>
                 </select>
               </div>
             </div>
 
             <div className="form-group">
-              <label className="form-label">University</label>
-              <input
+              <label className="form-label">University <span className="required-star">*</span></label>
+              <select
                 className="form-input"
                 value={profile.university}
                 onChange={(e) => setProfile({ ...profile, university: e.target.value })}
-                placeholder="e.g. University of Hong Kong, CUHK"
                 required
-              />
+              >
+                <option value="" disabled>-- Select your university --</option>
+                <option value="HKU">HKU — University of Hong Kong</option>
+                <option value="CUHK">CUHK — Chinese University of Hong Kong</option>
+                <option value="HKUST">HKUST — Hong Kong University of Science and Technology</option>
+                <option value="PolyU">PolyU — Hong Kong Polytechnic University</option>
+                <option value="CityU">CityU — City University of Hong Kong</option>
+                <option value="HKBU">HKBU — Hong Kong Baptist University</option>
+                <option value="LU">LU — Lingnan University</option>
+                <option value="EdUHK">EdUHK — Education University of Hong Kong</option>
+                <option value="UM">UM — University of Macau</option>
+                <option value="MPU">MPU — Macao Polytechnic University</option>
+              </select>
             </div>
 
-            <ChipInput
-              label="Target Roles"
-              values={profile.targetRoles}
-              onChange={(targetRoles) => setProfile({ ...profile, targetRoles })}
-              placeholder="e.g. Data Analyst, Software Engineer..."
-            />
+            <div className="form-group">
+              <label className="form-label">Target Roles <span className="required-star">*</span></label>
+              {profile.targetRoles.length > 0 && (
+                <div className="chip-input-wrap">
+                  {profile.targetRoles.map((role) => (
+                    <span key={role} className="chip">
+                      {role}
+                      <button type="button" onClick={() =>
+                        setProfile({ ...profile, targetRoles: profile.targetRoles.filter(r => r !== role) })
+                      }>&times;</button>
+                    </span>
+                  ))}
+                </div>
+              )}
+              <div className="role-select-container">
+                {ROLE_OPTIONS.map((sector) => (
+                  <div key={sector.sector} className="role-select-sector">
+                    <div className="role-select-sector-title">{sector.sector}</div>
+                    {sector.roles.map((role) => (
+                      <label key={role} className="role-select-item">
+                        <input
+                          type="checkbox"
+                          checked={profile.targetRoles.includes(role)}
+                          onChange={(e) => {
+                            if (e.target.checked) {
+                              setProfile({ ...profile, targetRoles: [...profile.targetRoles, role] })
+                            } else {
+                              setProfile({ ...profile, targetRoles: profile.targetRoles.filter(r => r !== role) })
+                            }
+                          }}
+                        />
+                        <span>{role}</span>
+                      </label>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
 
             <ChipInput
               label="Interests"
@@ -139,6 +189,8 @@ export default function CareerProfile() {
               onChange={(extracurriculars) => setProfile({ ...profile, extracurriculars })}
               placeholder="e.g. Debate Club, Hackathon..."
             />
+
+            <p className="required-hint"><span className="required-star">*</span> Required fields</p>
 
             <button type="submit" className="btn btn-primary btn-full" disabled={loading}>
               {loading ? 'Generating...' : 'Generate Career Compass'}

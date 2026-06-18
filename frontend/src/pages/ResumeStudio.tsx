@@ -9,10 +9,19 @@ const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true' || !import.meta.env.VI
 
 export default function ResumeStudio() {
   const [originalText, setOriginalText] = useState('')
+  const [pdfFile, setPdfFile] = useState<File | null>(null)
   const [instructions, setInstructions] = useState('')
   const [refined, setRefined] = useState<ResumeRefinementResponse | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  function handleUpload(text: string, file?: File) {
+    // Revoke old object URL if re-uploading
+    setPdfFile(file ?? null)
+    setOriginalText(text)
+    setRefined(null)
+    setError(null)
+  }
 
   async function handleRefine() {
     if (!originalText.trim() || !instructions.trim()) return
@@ -53,7 +62,6 @@ export default function ResumeStudio() {
     <main className="page">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">// RESUME_STUDIO</span>
           <h1 className="section-title">Resume Refinement</h1>
           <p className="section-intro">
             Upload your resume, tell me what to optimize for, and I'll refine it —
@@ -64,7 +72,7 @@ export default function ResumeStudio() {
         {error && <div className="error-banner">{error}</div>}
 
         {/* Step 1: Upload */}
-        <ResumeUploader onUpload={setOriginalText} disabled={loading} />
+        <ResumeUploader onUpload={handleUpload} disabled={loading} />
 
         {/* Step 2: Instructions */}
         {originalText && (
@@ -109,6 +117,7 @@ export default function ResumeStudio() {
               original={originalText}
               refined={refined.refinedText}
               changes={refined.changes}
+              pdfFile={pdfFile}
             />
 
             <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>

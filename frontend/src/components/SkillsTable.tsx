@@ -8,7 +8,7 @@ const TAG_LABELS: Record<string, string> = {
 
 const IMPORTANCE_LABELS: Record<string, string> = {
   critical: 'CRITICAL',
-  recommended: 'REC',
+  recommended: 'RECOMMENDED',
   'nice-to-have': 'NICE',
 }
 

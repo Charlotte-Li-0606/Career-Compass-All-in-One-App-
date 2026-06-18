@@ -20,7 +20,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink to="/mock-interview" className={({ isActive }) => isActive ? 'active' : ''}>
-            Mock Interview <span className="nav-badge">SOON</span>
+            Mock Interview
           </NavLink>
         </li>
       </ul>

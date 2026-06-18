@@ -1,12 +1,15 @@
 import { useState, useRef } from 'react'
 
 interface Props {
-  onUpload: (text: string) => void
+  onUpload: (text: string, file?: File) => void
   disabled?: boolean
 }
 
 async function extractPdfText(file: File): Promise<string> {
   const pdfjsLib = await import('pdfjs-dist')
+  // pdfjs-dist 6.x requires the web worker to be explicitly configured.
+  // Worker file is served from public/ to keep it same-origin (no CORS issues).
+  pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'
   const arrayBuffer = await file.arrayBuffer()
   const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
   const pages: string[] = []
@@ -39,7 +42,7 @@ export default function ResumeUploader({ onUpload, disabled }: Props) {
       setExtracting(true)
       try {
         const text = await extractPdfText(file)
-        onUpload(text)
+        onUpload(text, file)
       } catch (err) {
         console.error('PDF extraction failed', err)
         onUpload('[PDF extraction failed — please paste your resume text instead]')

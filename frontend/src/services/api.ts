@@ -7,7 +7,7 @@ import type {
 } from '../types';
 
 // Swap this to your deployed Azure Functions base URL
-const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:7071/api';
+const API_BASE = import.meta.env.VITE_API_BASE ?? 'https://hub-career-compass-ai.services.ai.azure.com/models/chat/completions?api-version=2024-05-01-preview';
 
 async function request<T>(path: string, body: unknown): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`, {
