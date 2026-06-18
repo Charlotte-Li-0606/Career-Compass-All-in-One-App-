@@ -1,0 +1,70 @@
+{
+  "sector": "Engineering & Construction",
+  "subSector": "Engineering & Infrastructure",
+  "lastUpdated": "2026-06-13",
+  "source": "Curated from HKIE Scheme A training requirements, Airport Authority HK Graduate Engineer Programme, VTC Manpower Update Report 2025 (Building & Civil Engineering), HK Labour Department LMI data, JobsDB HK, and Glassdoor HK (2025-2026)",
+  "roles": [
+    {
+      "roleTitle": "Graduate Civil Engineer",
+      "roleTitleZh": "畢業土木工程師",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 22,000 – 32,000/month",
+      "growthOutlook": "HK government's Northern Metropolis, Kau Yi Chau artificial islands, and public housing pipeline driving decade-long demand. HKIE Scheme A training programmes at major consultants and contractors. Stable career with professional qualification track.",
+      "hiringIndustries": ["Engineering & Construction", "Government & Public Sector", "Professional Services"],
+      "requiredSkills": [
+        { "skillName": "Engineering Mathematics & Mechanics", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Strong foundation in structural mechanics, fluid mechanics, geotechnics, and applied mathematics for engineering analysis and design.", "typicalLevel": "advanced" },
+        { "skillName": "AutoCAD / BIM", "skillCategory": "Business Tools", "importance": "critical", "description": "Produce engineering drawings and 3D models. BIM (Building Information Modeling) proficiency increasingly mandatory for HK government projects. Revit and Civil 3D are industry standard.", "typicalLevel": "intermediate" },
+        { "skillName": "Structural Analysis Software (SAP2000 / ETABS / MIDAS)", "skillCategory": "Business Tools", "importance": "recommended", "description": "Perform structural analysis and design calculations using industry-standard software. Varies by specialization.", "typicalLevel": "basic" },
+        { "skillName": "HK Building Regulations", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Understanding of Hong Kong Building Ordinance, Building (Construction) Regulations, and relevant Codes of Practice from Buildings Department.", "typicalLevel": "intermediate" },
+        { "skillName": "Project Management", "skillCategory": "Project Management", "importance": "recommended", "description": "Understanding of construction project lifecycle, site supervision, contract administration, and coordination with contractors and sub-consultants.", "typicalLevel": "basic" },
+        { "skillName": "Excel / Data Analysis", "skillCategory": "Business Tools", "importance": "critical", "description": "Perform engineering calculations, create design spreadsheets, and analyze site monitoring data.", "typicalLevel": "intermediate" },
+        { "skillName": "Geotechnical Knowledge", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Understanding of HK geology, slope stability, foundation design, and site investigation methods. Critical for HK's hilly terrain.", "typicalLevel": "basic" },
+        { "skillName": "Technical Report Writing", "skillCategory": "Professional Communication", "importance": "critical", "description": "Prepare design reports, method statements, site investigation reports, and technical submissions to government departments.", "typicalLevel": "intermediate" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Essential for technical documentation, professional exams (HKIE), international design standards, and communication on multinational project teams.", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "critical", "description": "Essential for site communication, contractor coordination, and client meetings. Most construction workers and local clients communicate in Cantonese.", "typicalLevel": "business-proficient" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "nice-to-have", "description": "Useful for cross-border infrastructure projects and working with mainland Chinese contractors or consultants.", "typicalLevel": "basic" }
+      ]
+    },
+    {
+      "roleTitle": "Supply Chain Analyst",
+      "roleTitleZh": "供應鏈分析師",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 20,000 – 30,000/month",
+      "growthOutlook": "HK's position as regional logistics hub and gateway to China ensures steady demand. Growing roles in supply chain analytics, digitalization, and sustainability. E-commerce and cold chain logistics expanding.",
+      "hiringIndustries": ["Logistics & Supply Chain", "Retail & E-commerce", "Engineering & Construction", "Technology & IT"],
+      "requiredSkills": [
+        { "skillName": "Excel / Google Sheets", "skillCategory": "Business Tools", "importance": "critical", "description": "Build inventory models, analyze supply chain data, create demand forecasts, and track KPIs. Advanced formulas, pivot tables, and basic macros.", "typicalLevel": "advanced" },
+        { "skillName": "SQL", "skillCategory": "Databases", "importance": "recommended", "description": "Query supply chain databases, extract inventory and logistics data, and automate reporting workflows.", "typicalLevel": "intermediate" },
+        { "skillName": "Data Visualization (Power BI / Tableau)", "skillCategory": "Business Intelligence", "importance": "recommended", "description": "Create supply chain dashboards showing inventory levels, delivery performance, and cost metrics for management reporting.", "typicalLevel": "basic" },
+        { "skillName": "ERP Systems (SAP / Oracle)", "skillCategory": "Business Tools", "importance": "recommended", "description": "Use enterprise resource planning systems for inventory management, procurement, and order processing. SAP is the most common in HK.", "typicalLevel": "basic" },
+        { "skillName": "Demand Forecasting", "skillCategory": "Analytics & Statistics", "importance": "critical", "description": "Apply statistical methods to forecast demand, plan inventory levels, and optimize stock replenishment cycles.", "typicalLevel": "intermediate" },
+        { "skillName": "Logistics & Trade Operations", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Understanding of freight forwarding, customs clearance, warehousing operations, incoterms, and HK's trade documentation requirements.", "typicalLevel": "basic" },
+        { "skillName": "Python", "skillCategory": "Programming Languages", "importance": "nice-to-have", "description": "Automate supply chain data analysis, build forecasting models, and create data pipelines for supply chain metrics.", "typicalLevel": "basic" },
+        { "skillName": "Sustainability in Supply Chain", "skillCategory": "Domain Knowledge", "importance": "nice-to-have", "description": "Understanding of green logistics, carbon footprint tracking, and sustainable procurement practices. Growing importance in HK.", "typicalLevel": "basic" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Essential for international trade documentation, vendor communication, and working with global supply chain partners.", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "critical", "description": "Required for local warehouse and logistics partner communication, supplier negotiation, and working with HK-based teams.", "typicalLevel": "business-proficient" },
+        { "skillName": "Mandarin", "skillCategory": "Languages", "importance": "critical", "description": "Essential for supply chain roles involving mainland China — communicating with factories, suppliers, logistics providers, and cross-border trade partners.", "typicalLevel": "business-proficient" }
+      ]
+    },
+    {
+      "roleTitle": "Building Services Engineer",
+      "roleTitleZh": "屋宇設備工程師",
+      "isEntryLevel": true,
+      "typicalSalary": "HKD 22,000 – 32,000/month",
+      "growthOutlook": "Consistent demand driven by HK's ongoing construction pipeline (public housing, MTR expansion, hospital projects). Specialization in green building, energy efficiency, and smart building systems growing. HKIE Scheme A training available.",
+      "hiringIndustries": ["Engineering & Construction", "Government & Public Sector"],
+      "requiredSkills": [
+        { "skillName": "HVAC & Mechanical Systems", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Design heating, ventilation, and air conditioning systems for HK's subtropical climate. Understanding of energy efficiency and ACMV design standards.", "typicalLevel": "intermediate" },
+        { "skillName": "Electrical Systems", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Design electrical distribution, lighting, fire services, and security systems for commercial and residential buildings.", "typicalLevel": "intermediate" },
+        { "skillName": "BIM / Revit MEP", "skillCategory": "Business Tools", "importance": "critical", "description": "3D modeling of building services systems using Revit MEP. BIM coordination and clash detection. Mandatory for HK government projects.", "typicalLevel": "intermediate" },
+        { "skillName": "HK Building Services Codes", "skillCategory": "Domain Knowledge", "importance": "critical", "description": "Knowledge of HK Buildings Department codes, Fire Services Department requirements, Water Supplies Department regulations, and EMSD standards.", "typicalLevel": "intermediate" },
+        { "skillName": "AutoCAD", "skillCategory": "Business Tools", "importance": "critical", "description": "Produce 2D building services drawings, schematics, and coordination plans.", "typicalLevel": "intermediate" },
+        { "skillName": "Green Building (BEAM Plus / LEED)", "skillCategory": "Domain Knowledge", "importance": "recommended", "description": "Understanding of green building certification systems. BEAM Plus is the HK standard. Energy modeling and sustainable design principles.", "typicalLevel": "basic" },
+        { "skillName": "Project Coordination", "skillCategory": "Project Management", "importance": "recommended", "description": "Coordinate building services design with architectural and structural teams. Attend site meetings and resolve installation issues.", "typicalLevel": "basic" },
+        { "skillName": "Excel / Calculation Tools", "skillCategory": "Business Tools", "importance": "critical", "description": "Perform engineering calculations for load estimation, pipe sizing, cable sizing, and energy analysis.", "typicalLevel": "intermediate" },
+        { "skillName": "English", "skillCategory": "Languages", "importance": "critical", "description": "Essential for technical specifications, international equipment documentation, and professional examination preparation (HKIE/CIBSE).", "typicalLevel": "business-proficient" },
+        { "skillName": "Cantonese", "skillCategory": "Languages", "importance": "critical", "description": "Essential for site communication with contractors, coordination with local suppliers, and client meetings.", "typicalLevel": "business-proficient" }
+      ]
+    }
+  ]
+}

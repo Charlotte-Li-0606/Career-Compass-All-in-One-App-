@@ -1,0 +1,82 @@
+{
+  "description": "Entry-level salary benchmarks for Hong Kong graduates by industry sector, based on CTgoodjobs 2025 Graduate Salary Survey, HKBU GBA Pay Survey, and JIJIS data. All figures in HKD/month.",
+  "lastUpdated": "2026-06-13",
+  "source": "CTgoodjobs 2025 Graduate Salary & Employment Survey, HKBU Greater Bay Area Pay and Benefits Survey 2025, JIJIS (Joint University Job Information System), HK Government Census & Statistics Department",
+  "overallAverage": {
+    "bachelorGraduateEntry": 19500,
+    "employerOfferAverage": 17287,
+    "graduateExpectationAverage": 22576,
+    "note": "Starting salaries plateaued at ~HK$19,500 in 2025, ending 5 years of consecutive growth. Expected 2.8% increase in 2026."
+  },
+  "sectors": [
+    {
+      "sector": "Engineering & Construction",
+      "averageEntrySalary": 21000,
+      "range": "18,000 – 35,000",
+      "trend": "Growing",
+      "note": "Highest-paying sector for fresh graduates in 2025. Driven by Northern Metropolis, public housing pipeline, and infrastructure projects."
+    },
+    {
+      "sector": "Government & Public Sector",
+      "averageEntrySalary": 19500,
+      "range": "18,000 – 35,000",
+      "trend": "Stable",
+      "note": "Civil service salaries moderated in 2025. Still competitive with strong job security. Includes statutory bodies and public utilities."
+    },
+    {
+      "sector": "Technology & IT",
+      "averageEntrySalary": 20500,
+      "range": "18,000 – 45,000",
+      "trend": "Growing",
+      "note": "AI, fintech, and digital transformation driving demand. One of few sectors showing growth. Higher end for AI/ML and specialized roles."
+    },
+    {
+      "sector": "Banking & Finance",
+      "averageEntrySalary": 20000,
+      "range": "17,000 – 80,000 (IB)",
+      "trend": "Stable",
+      "note": "Oversupply of graduates has reduced average entry salaries, but elite roles (IB, PE, trading) still command premiums. Fintech roles growing."
+    },
+    {
+      "sector": "Healthcare & Pharmaceuticals",
+      "averageEntrySalary": 28000,
+      "range": "18,000 – 35,000",
+      "trend": "Growing",
+      "note": "Consistent demand from HK's aging population. Clinical roles command higher premiums. Health informatics emerging."
+    },
+    {
+      "sector": "Professional Services",
+      "averageEntrySalary": 20000,
+      "range": "18,000 – 45,000",
+      "trend": "Stable",
+      "note": "Big 4 audit and consulting hire large volumes. MBB consulting at higher end. ESG advisory growing."
+    },
+    {
+      "sector": "Marketing & E-commerce",
+      "averageEntrySalary": 17000,
+      "range": "16,000 – 28,000",
+      "trend": "Stable",
+      "note": "One of the lower-paying entry sectors but strong career growth potential. Digital marketing and e-commerce roles pay better than traditional marketing."
+    },
+    {
+      "sector": "Logistics & Supply Chain",
+      "averageEntrySalary": 18000,
+      "range": "16,000 – 30,000",
+      "trend": "Stable",
+      "note": "HK's role as regional logistics hub supports demand. E-commerce logistics and supply chain analytics growing."
+    }
+  ],
+  "educationLevelMultiplier": {
+    "higherDiploma": 0.8,
+    "bachelor": 1.0,
+    "master": 1.15,
+    "phd": 1.3,
+    "note": "Approximate multipliers relative to bachelor's degree. Actual varies by sector and employer."
+  },
+  "universityTierAdjustment": {
+    "top3": 1.1,
+    "top8": 1.0,
+    "other": 0.95,
+    "note": "HKU, CUHK, HKUST graduates command slight premium in certain sectors (especially finance and consulting). Effect is minimal after 2-3 years of experience."
+  }
+}
