@@ -1,6 +1,11 @@
 import { useState, useRef, useEffect, type KeyboardEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ROLE_OPTIONS } from '../data/roles'
+import {
+  selectInterviewQuestions,
+  getSectorForRole as getSectorFromData,
+  type InterviewDifficulty,
+} from '../data/interviewQuestions'
 
 // ── Types ──
 type InterviewState = 'setup' | 'active' | 'report'
@@ -19,50 +24,6 @@ interface PerformanceReport {
   }
   strengths: string[]
   improvements: string[]
-}
-
-// ── Mock question banks (per sector) ──
-const SECTOR_QUESTIONS: Record<string, string[]> = {
-  'Technology & IT': [
-    'Tell me about a technical project you worked on and the impact it had.',
-    'How do you stay up-to-date with the latest technologies and frameworks?',
-    'Describe a time you had to debug a difficult problem. What was your approach?',
-    'How do you explain technical concepts to non-technical stakeholders?',
-    'What is your experience with version control and collaborative development?',
-    'Where do you see the tech industry heading in the next 3 years, and how do you plan to adapt?',
-  ],
-  'Banking & Finance': [
-    'Walk me through a financial model or analysis you\'ve built.',
-    'How do you stay informed about market trends and economic indicators?',
-    'Tell me about a time you had to make a decision with incomplete data.',
-    'How do you handle tight deadlines and high-pressure situations?',
-    'What attracts you to the financial services industry?',
-    'Describe a situation where you identified a risk others overlooked.',
-  ],
-  'Professional Services': [
-    'Tell me about a time you helped a team or client solve a complex problem.',
-    'How do you manage multiple projects with competing deadlines?',
-    'Describe a situation where you had to present findings to senior leadership.',
-    'What does professional integrity mean to you? Can you give an example?',
-    'How do you approach learning a new industry or domain quickly?',
-    'Tell me about a time you received difficult feedback. How did you respond?',
-  ],
-  'Marketing & E-commerce': [
-    'Describe a marketing campaign or strategy you developed. What were the results?',
-    'How do you measure the success of a digital marketing initiative?',
-    'Tell me about a time you used data to inform a marketing decision.',
-    'How do you stay current with changing consumer behaviors and platform algorithms?',
-    'Describe a time you had to pivot a campaign mid-flight. What happened?',
-    'What e-commerce trends do you think will define the next 2 years?',
-  ],
-  'Engineering & Construction': [
-    'Tell me about an engineering project you contributed to. What was your role?',
-    'How do you ensure quality and safety standards in your work?',
-    'Describe a time you had to coordinate across multiple teams or contractors.',
-    'How do you approach problem-solving when specifications change mid-project?',
-    'What sustainability considerations do you bring to engineering projects?',
-    'Tell me about a technical challenge you faced and how you overcame it.',
-  ],
 }
 
 // ── Report generation (mock heuristics) ──
@@ -136,24 +97,37 @@ export default function MockInterview() {
 
   // ── Actions ──
   function getSectorForRole(role: string): string {
-    return ROLE_OPTIONS.find((s) => s.roles.includes(role))?.sector ?? 'Technology & IT'
+    // Prefer the new interview data; fall back to the ROLE_OPTIONS mapping
+    return getSectorFromData(role) ?? ROLE_OPTIONS.find((s) => s.roles.includes(role))?.sector ?? 'Technology & IT'
   }
 
   function startInterview() {
     if (!selectedRole) return
 
-    const sector = getSectorForRole(selectedRole)
-    const bank = SECTOR_QUESTIONS[sector] ?? SECTOR_QUESTIONS['Technology & IT']
-    // Pick 4 questions (shuffle and take first 4)
-    const shuffled = [...bank].sort(() => Math.random() - 0.5).slice(0, 4)
-    setQuestions(shuffled)
+    // Select questions based on role and difficulty
+    const selected = selectInterviewQuestions(selectedRole, difficulty as InterviewDifficulty, 4)
+    if (selected.length === 0) {
+      // Fallback: role not in the new data yet
+      const sector = getSectorForRole(selectedRole)
+      const fallback = [
+        `Tell me about your experience and skills relevant to the ${selectedRole} role.`,
+        'Describe a challenging situation you faced and how you resolved it.',
+        'What are your strengths and how do they apply to this position?',
+        'Where do you see yourself professionally in the next 3-5 years?',
+      ]
+      selected.push(...fallback)
+    }
+
+    setQuestions(selected)
     setQuestionIndex(0)
     setAnswers([])
     setMessages([])
     setReport(null)
 
-    // First AI message
-    const intro = `Hi! I'll be your interviewer for the **${selectedRole}** role today. I'll ask you a few questions to help you practice. Take your time, and remember — this is a safe space to learn.\n\nLet's begin! **Question 1:** ${shuffled[0]}`
+    const levelLabel = difficulty.charAt(0).toUpperCase() + difficulty.slice(1)
+
+    // First AI message — includes difficulty context
+    const intro = `Hi! I'll be your interviewer for the **${selectedRole}** role at **${levelLabel}** level today. I'll ask you ${selected.length} questions tailored to this experience level to help you practice. Take your time, and remember — this is a safe space to learn.\n\nLet's begin! **Question 1:** ${selected[0]}`
     setMessages([{ role: 'ai', text: intro }])
     setState('active')
   }
@@ -177,7 +151,7 @@ export default function MockInterview() {
       setTimeout(() => {
         const closingMsg: ChatMessage = {
           role: 'ai',
-          text: "Great job! That wraps up our mock interview. I've prepared a performance report based on your responses — tap **View Report** to see how you did.",
+          text: `Great job! That wraps up our ${difficulty}-level mock interview. I've prepared a performance report based on your responses — tap **View Report** to see how you did.`,
         }
         setMessages([...newMessages, closingMsg])
         setAiThinking(false)
@@ -189,13 +163,29 @@ export default function MockInterview() {
       setAiThinking(true)
       setQuestionIndex(nextIdx)
       setTimeout(() => {
-        const followUps = [
-          'Thanks for sharing that. ',
-          'Interesting perspective. ',
-          'Good point. ',
-          'I appreciate that insight. ',
-          'That makes a lot of sense. ',
-        ]
+        const followUps = difficulty === 'intern'
+          ? [
+              'Thanks for sharing that. ',
+              'Great, I can see you\'ve thought about this. ',
+              'Good answer. ',
+              'Nice — that\'s a solid example. ',
+              'I appreciate hearing your perspective. ',
+            ]
+          : difficulty === 'graduate'
+          ? [
+              'Thanks for that detailed response. ',
+              'Interesting — I can see how that experience shaped your thinking. ',
+              'Good point, well articulated. ',
+              'That\'s a strong example. ',
+              'I appreciate the depth of that answer. ',
+            ]
+          : [
+              'Excellent — that demonstrates strong experience. ',
+              'That\'s a compelling example of leadership. ',
+              'Very insightful — I can see the strategic thinking. ',
+              'That\'s exactly the kind of experience we look for. ',
+              'A nuanced perspective — thank you for sharing. ',
+            ]
         const followUp = followUps[Math.floor(Math.random() * followUps.length)]
         const nextQ: ChatMessage = {
           role: 'ai',
@@ -472,6 +462,16 @@ export default function MockInterview() {
           <div>
             <span style={{ color: 'var(--accent-cyan)', fontFamily: 'var(--font-mono)', fontSize: '0.72rem', letterSpacing: '1px' }}>
               {selectedRole}
+            </span>
+            <span style={{ color: 'var(--text-muted)', margin: '0 0.75rem' }}>·</span>
+            <span style={{
+              color: 'var(--accent-purple)',
+              fontFamily: 'var(--font-mono)',
+              fontSize: '0.65rem',
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+            }}>
+              {difficulty}
             </span>
             <span style={{ color: 'var(--text-muted)', margin: '0 0.75rem' }}>·</span>
             <span style={{ color: 'var(--text-secondary)', fontSize: '0.8rem' }}>
