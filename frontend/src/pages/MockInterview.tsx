@@ -218,7 +218,7 @@ export default function MockInterview() {
       setTimeout(() => {
         setIsRecording(false)
         if (!input.trim()) {
-          setInput('I believe my experience and skills make me a strong fit for this role. I have worked on several projects that demonstrate my ability to deliver results.')
+          setInput('Use arrays when you need fast random access by index (O(1)) and the size is known or stable — they store elements contiguously in memory, which also gives great cache locality. Use linked lists when you have frequent insertions or deletions at the beginning or middle (O(1) with a pointer to the node) and don\'t need random access — each node points to the next, so traversal is O(n) but resizing is never necessary.')
         }
       }, 3000)
     }
@@ -523,15 +523,10 @@ export default function MockInterview() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              onInput={(e) => {
-                const el = e.currentTarget
-                el.style.height = 'auto'
-                el.style.height = Math.min(el.scrollHeight, 150) + 'px'
-              }}
               placeholder={isRecording ? 'Listening...' : 'Type your answer...'}
               disabled={aiThinking}
-              rows={3}
-              style={{ flex: 1, margin: 0, resize: 'none', overflow: 'auto' }}
+              rows={4}
+              style={{ flex: 1, margin: 0, resize: 'none' }}
             />
             <button
               className="btn btn-primary"
