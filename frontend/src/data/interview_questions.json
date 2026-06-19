@@ -1,0 +1,1139 @@
+{
+  "lastUpdated": "2026-06-18",
+  "source": "HK/Macau job market research — Glassdoor, CTgoodjobs, Robert Half HK, Indeed HK, industry-specific interview guides, and common interview practices at major HK employers (HSBC, Standard Chartered, Big 4, MTR, CLP, PCCW, Alibaba HK, Tencent, etc.)",
+  "description": "Role-specific mock interview questions for Career Compass, organized by experience level (intern, graduate, experienced). Questions reflect Hong Kong and Macau job market expectations across 20 roles in 5 sectors.",
+  "roles": {
+    "Data Analyst": {
+      "sector": "Technology & IT",
+      "intern": {
+        "behavioral": [
+          "Why are you interested in data analytics, and what drew you to this field?",
+          "Tell me about a time you used data to solve a problem, even in a school project.",
+          "How do you stay organized when working with multiple data sources or assignments?",
+          "Describe a situation where you had to explain something technical to a non-technical friend or classmate."
+        ],
+        "technical": [
+          "What is the difference between INNER JOIN and LEFT JOIN in SQL? Can you give an example from a real scenario?",
+          "Explain what a p-value means in simple terms — imagine you're explaining it to a classmate who hasn't studied statistics.",
+          "You have a sales dataset with missing values in the revenue column. How would you handle this?",
+          "What's the difference between a bar chart and a histogram? When would you use each?"
+        ],
+        "situational": [
+          "Your manager asks you to create a report by end of day, but you've discovered the source data looks inconsistent. What do you do?",
+          "You're analyzing customer survey data and notice a pattern that contradicts what your team believes. How do you present this?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a data project where you went beyond the initial requirements to find deeper insights.",
+          "How do you handle conflicting requests from two different stakeholders who both need data analysis from you?",
+          "Tell me about a time your analysis was wrong or incomplete. What did you learn?",
+          "At many HK companies, you'll work with both technical and business teams. How do you adapt your communication style?"
+        ],
+        "technical": [
+          "Write a SQL query to find the top 5 customers by monthly revenue, including months where they had zero purchases.",
+          "Explain the bias-variance tradeoff. How would you diagnose whether a model is underfitting or overfitting?",
+          "You're running an A/B test for a new feature on a HK e-commerce site. After one week, the p-value is 0.04. What does this mean for the business decision?",
+          "How would you design a data pipeline to ingest and clean daily transaction data from multiple retail locations across Hong Kong and Macau?",
+          "Walk me through how you would approach a 25% month-over-month drop in user engagement for a mobile app."
+        ],
+        "situational": [
+          "Your team is presenting to senior management tomorrow, and you just found a calculation error in one of the key metrics. What do you do?",
+          "A stakeholder keeps requesting ad-hoc reports that deviate from the agreed analytics roadmap. How do you manage this?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you influenced a significant business decision through data analysis. What was the impact in dollar terms?",
+          "How have you mentored junior analysts and built a data-driven culture in your team?",
+          "Describe a situation where you had to push back on leadership because the data didn't support their proposed direction."
+        ],
+        "technical": [
+          "How would you architect a real-time dashboard for tracking key business metrics across Hong Kong, Macau, and GBA operations? Discuss data freshness, scalability, and cost.",
+          "Explain how you would evaluate and select between a batch processing architecture (e.g., Spark) versus a streaming architecture (e.g., Kafka/Flink) for a financial reporting use case.",
+          "How do you handle data drift in production ML models? Describe your monitoring and retraining strategy.",
+          "Design an experimentation framework for a company running multiple A/B tests simultaneously across different product teams. How do you handle interaction effects?"
+        ],
+        "situational": [
+          "Your analytics team has grown from 2 to 8 people in a year. How do you structure the team, establish processes, and maintain quality?",
+          "The CTO wants to migrate the entire data stack to the cloud within 3 months, but you know the data quality and governance foundations aren't ready. How do you handle this conversation?"
+        ]
+      }
+    },
+    "Software Engineer": {
+      "sector": "Technology & IT",
+      "intern": {
+        "behavioral": [
+          "What project are you most proud of from your studies or personal work? Walk me through it.",
+          "How do you approach learning a new programming language or framework?",
+          "Tell me about a time you worked on a team project and encountered a conflict. How did you resolve it?",
+          "At many HK tech firms, you'll work with colleagues across time zones. How would you handle async communication?"
+        ],
+        "technical": [
+          "Explain the difference between an array and a linked list. When would you choose one over the other?",
+          "What is the difference between HTTP GET and POST methods? Give an example use case for each.",
+          "Write a function to check if a string is a palindrome. How would you test it?",
+          "What does RESTful API design mean? How would you design an endpoint for retrieving user orders?"
+        ],
+        "situational": [
+          "You're assigned a bug that only occurs in production but you can't reproduce it locally. What steps do you take?",
+          "Your code review feedback on a teammate's pull request is being ignored. What would you do?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a time you had to refactor poorly written code. How did you approach it without breaking existing functionality?",
+          "How do you ensure the code you write is maintainable by other engineers six months from now?",
+          "Tell me about a production incident you were involved in. What was your role, and what did you learn?",
+          "In HK's fast-paced tech scene, how do you balance shipping quickly with code quality?"
+        ],
+        "technical": [
+          "Explain the CAP theorem. If you're building a payment processing system for HK and Macau users, which two would you prioritize and why?",
+          "Design a URL shortener service like bit.ly. Walk me through the database schema, API design, and how you'd handle high traffic.",
+          "What's the difference between optimistic and pessimistic locking? When would you use each in a banking application?",
+          "How would you debug a slow API endpoint that sometimes takes 5 seconds to respond? Walk me through your approach.",
+          "Explain microservices vs monolith. If a HK startup is building an MVP of a food delivery app, which architecture would you recommend and why?"
+        ],
+        "situational": [
+          "You're a day before the sprint demo and discover a security vulnerability in a feature you built. What do you do?",
+          "Your product manager wants to ship a feature that you believe is technically flawed. How do you handle this conversation?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you led a technical migration (e.g., monolith to microservices, on-prem to cloud). What were the biggest challenges?",
+          "How do you mentor senior engineers and build engineering culture across multiple teams?",
+          "Describe a situation where you had to make a difficult architectural decision under significant time pressure."
+        ],
+        "technical": [
+          "Design a real-time chat system that supports Hong Kong and Macau users with low latency. Discuss your tech stack, message ordering guarantees, and how you handle disconnections.",
+          "How would you design a circuit breaker pattern for microservices calling each other? Include failure thresholds, timeout strategies, and monitoring.",
+          "Explain eventual consistency patterns. Design a system that allows users in HK and Macau to book the same limited-quantity product without double-booking.",
+          "How would you approach database sharding for a multi-tenant SaaS application? Discuss shard key selection, rebalancing, and cross-shard queries."
+        ],
+        "situational": [
+          "Your engineering organization is growing from 10 to 50 engineers across 2 offices. How do you maintain code quality, consistent practices, and knowledge sharing?",
+          "A critical production outage is costing the business HKD 100K per hour. Your most senior engineer is on leave. How do you lead the incident response?"
+        ]
+      }
+    },
+    "AI / Machine Learning Engineer": {
+      "sector": "Technology & IT",
+      "intern": {
+        "behavioral": [
+          "What got you interested in AI and machine learning? Any specific project or problem that inspired you?",
+          "How do you keep up with the fast-moving field of AI? What resources do you follow?",
+          "Tell me about a time you struggled with a technical concept and how you eventually understood it."
+        ],
+        "technical": [
+          "What is the difference between supervised and unsupervised learning? Give an example of each.",
+          "Explain overfitting. If your model has 99% training accuracy but 70% test accuracy, what's happening and how would you fix it?",
+          "What is a confusion matrix? Calculate precision, recall, and F1 score from a given set of predictions.",
+          "Why do we split data into training, validation, and test sets? What happens if we don't?"
+        ],
+        "situational": [
+          "Your model's predictions seem biased toward a particular group in the dataset. What steps would you take to investigate and address this?",
+          "You're asked to build a model but the dataset you're given only has 200 rows. How do you approach this?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a machine learning project you took from idea to working prototype. What were the key technical decisions?",
+          "How do you explain a complex ML model's predictions to a product manager who has no technical background?",
+          "Tell me about a time an ML model you built performed poorly in production. What did you learn?"
+        ],
+        "technical": [
+          "Explain the transformer architecture and the attention mechanism. Why have transformers largely replaced RNNs for NLP tasks?",
+          "You're building a recommendation system for a HK e-commerce platform. Walk me through your approach from data collection to serving.",
+          "What is RAG (Retrieval Augmented Generation)? When would you use it instead of fine-tuning an LLM?",
+          "How do you handle class imbalance in a fraud detection model? Discuss data-level, algorithm-level, and evaluation approaches.",
+          "Explain how you would set up an MLOps pipeline including data validation, model training, evaluation, and deployment with rollback capability."
+        ],
+        "situational": [
+          "Your model performs well on offline metrics but A/B test results show no business impact. What do you investigate?",
+          "The engineering team wants to simplify your ML pipeline by removing feature engineering steps you believe are critical. How do you resolve this?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you defined the ML strategy for a company or business unit. How did you prioritize projects?",
+          "How have you built and led ML teams? What's your approach to hiring and developing ML talent?",
+          "Describe a situation where you had to kill an ML project that wasn't delivering value, despite significant investment."
+        ],
+        "technical": [
+          "Design a real-time fraud detection system processing 10,000 transactions per second. Discuss feature serving, model inference latency, and the tradeoff between precision and recall in this context.",
+          "How would you build a multi-agent AI system for customer support that handles Cantonese, Mandarin, and English queries with domain-specific knowledge of HK financial regulations?",
+          "Discuss your approach to LLM evaluation. How do you measure hallucination, relevance, and safety in a production RAG pipeline?",
+          "How do you think about cost optimization for serving LLMs at scale? Compare different strategies: quantization, distillation, caching, model routing."
+        ],
+        "situational": [
+          "The CEO wants to launch an AI chatbot feature in 6 weeks. You estimate it needs 6 months to be production-ready. How do you navigate this?",
+          "Your team's ML model is showing signs of bias against certain demographic groups in HK. How do you address this technically and organizationally?"
+        ]
+      }
+    },
+    "Business Intelligence Developer": {
+      "sector": "Technology & IT",
+      "intern": {
+        "behavioral": [
+          "Why are you interested in business intelligence? What do you find compelling about turning data into dashboards?",
+          "Describe a time you created a chart or visualization that helped someone understand data better.",
+          "How do you ensure accuracy when you're working with numbers in Excel or a similar tool?"
+        ],
+        "technical": [
+          "What's the difference between a fact table and a dimension table? Give an example from a retail business.",
+          "Explain what a star schema is. Why is it commonly used in data warehousing?",
+          "In Power BI, what is the difference between a calculated column and a measure?",
+          "What types of charts would you use for: (a) showing sales trends over 12 months, (b) comparing product category performance, (c) showing the relationship between marketing spend and revenue?"
+        ],
+        "situational": [
+          "A stakeholder says 'the numbers in this dashboard look wrong.' How do you investigate?",
+          "You have two weeks to build a dashboard, but the required data is spread across three different systems. What's your first step?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Tell me about a dashboard you built that drove a real business decision. What was the outcome?",
+          "How do you gather requirements from business stakeholders who aren't sure what they need?",
+          "Describe a time you had to push back on a dashboard request because you believed there was a better way to answer the business question."
+        ],
+        "technical": [
+          "Explain the difference between ETL and ELT. When would you choose one over the other for a HK retail company processing daily sales data?",
+          "How do you use the CALCULATE function in DAX? Give an example where context transition is important.",
+          "You're designing a BI solution that needs to serve both C-level executives (high-level KPIs) and operations managers (granular drill-down). How do you structure your dashboards?",
+          "Describe how you would handle slowly changing dimensions (SCDs) in a data warehouse. Compare Type 1, Type 2, and Type 3 approaches.",
+          "How would you optimize a Power BI report that's taking 30 seconds to load? Discuss query folding, aggregations, and data model optimization."
+        ],
+        "situational": [
+          "Your CEO asks for a 'simple dashboard' by Friday, but you know the underlying data quality is poor. What do you do?",
+          "Two department heads are arguing over which KPIs should be on the shared dashboard. How do you facilitate resolution?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Describe how you've built a data culture in an organization. What worked and what didn't?",
+          "Tell me about a major BI platform migration you led (e.g., from Tableau to Power BI). How did you manage the transition?",
+          "How do you balance the demand for self-service analytics with the need for governed, consistent enterprise reporting?"
+        ],
+        "technical": [
+          "Design the BI architecture for a HK-based company with both on-premises legacy systems and cloud data sources. How do you ensure consistent reporting?",
+          "How would you implement a semantic layer that serves Power BI, Tableau, and embedded analytics simultaneously? Discuss tools, modeling approach, and governance.",
+          "What's your approach to BI tool selection? Compare Power BI, Tableau, and Looker for a 500-person financial services firm in Hong Kong.",
+          "How do you think about real-time BI vs traditional batch reporting? When is real-time worth the additional complexity and cost?"
+        ],
+        "situational": [
+          "The CFO has built a 'shadow BI' system in Excel because they don't trust the official dashboards. How do you address this?",
+          "Your BI team is constantly firefighting data quality issues instead of building new capabilities. How do you break this cycle?"
+        ]
+      }
+    },
+    "IT Project Manager": {
+      "sector": "Technology & IT",
+      "intern": {
+        "behavioral": [
+          "What interests you about project management in the technology field?",
+          "Tell me about a time you coordinated a group project or event. How did you keep everyone on track?",
+          "How do you prioritize when you have multiple deadlines and limited time?",
+          "What project management tools or methods have you used, even for university group work?"
+        ],
+        "technical": [
+          "What is the difference between Agile and Waterfall methodologies? When might each be appropriate?",
+          "Can you explain what a sprint is in Scrum? What are the key ceremonies?",
+          "What is a Gantt chart and what is it used for?",
+          "What does MVP stand for, and why is it an important concept in tech projects?"
+        ],
+        "situational": [
+          "Your team is behind schedule on a project deliverable. What are your first three steps?",
+          "A developer tells you a feature will take two weeks, but your stakeholder expects it in three days. How do you handle this?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a project you managed from initiation to delivery. What went well, and what would you do differently?",
+          "How do you handle a team member who consistently misses deadlines?",
+          "Tell me about a time you had to manage a difficult stakeholder. What was the situation and outcome?",
+          "In HK's fast-moving business environment, how do you manage scope creep while maintaining stakeholder relationships?"
+        ],
+        "technical": [
+          "Explain the MoSCoW prioritization method. Give an example of how you'd apply it to a website redesign project.",
+          "How do you estimate project timelines? Discuss the difference between effort and duration, and how you account for uncertainty.",
+          "What is a risk register, and how do you maintain it throughout a project lifecycle?",
+          "Explain the difference between a project manager and a scrum master in an Agile environment.",
+          "You're managing a software project with a distributed team across Hong Kong, Shenzhen, and Manila. What tools and practices would you use to ensure effective collaboration?"
+        ],
+        "situational": [
+          "Midway through a project, the business sponsor asks to add a major feature that would delay delivery by two months. How do you handle this?",
+          "Your vendor in Shenzhen has missed two consecutive milestones. How do you escalate and manage the situation?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a large-scale IT program you managed with a budget exceeding HKD 10M. What were the biggest challenges?",
+          "How have you turned around a failing project? What was the situation and what steps did you take?",
+          "Describe your approach to vendor management when working with multiple system integrators on a complex implementation."
+        ],
+        "technical": [
+          "How do you build a PMO from scratch? What frameworks, tools, and governance structures would you implement for a 200-person technology organization?",
+          "Describe how you manage dependencies across a portfolio of 8-12 concurrent projects with shared resources. What tools and processes do you use?",
+          "How do you measure project success beyond the triple constraint (time, cost, scope)? What KPIs do you track?",
+          "Walk me through how you would manage a cloud migration project for a HK enterprise with legacy systems, regulatory constraints, and 500+ employees."
+        ],
+        "situational": [
+          "An executive sponsor keeps bypassing change control and directly asking developers to build features. This is affecting your team's morale and sprint commitments. What do you do?",
+          "Your project's critical path depends on a government approval (e.g., SFC, HKMA) with an uncertain timeline. How do you manage stakeholder expectations and keep the team productive?"
+        ]
+      }
+    },
+    "Investment Banking Analyst": {
+      "sector": "Banking & Finance",
+      "intern": {
+        "behavioral": [
+          "Why investment banking? What specifically about the industry interests you?",
+          "Tell me about a time you worked under significant pressure or a tight deadline. How did you handle it?",
+          "How do you stay organized when juggling multiple tasks or projects?",
+          "What do you know about the HK IPO market and why is Hong Kong a major financial hub?"
+        ],
+        "technical": [
+          "Walk me through the three main financial statements and how they connect.",
+          "What is enterprise value? How is it different from equity value?",
+          "Explain what EBITDA is and why it's commonly used in valuation.",
+          "If a company has a P/E ratio of 15 and earnings of HKD 100 million, what is its market capitalization?"
+        ],
+        "situational": [
+          "You're working on a pitch book that's due tomorrow morning, and at 8 PM your MD asks you to completely redo a key section based on new information. What do you do?",
+          "You notice a potential error in a colleague's valuation model, but they've already sent it to the VP. How do you handle this?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Walk me through a recent M&A or IPO deal in Hong Kong that interested you. Why was it significant?",
+          "Describe a time you made a mistake in your work. How did you catch it, and what was the outcome?",
+          "How do you handle receiving feedback that your work isn't good enough? Give a real example.",
+          "Why our bank specifically? What differentiates us in the Asia-Pacific market?"
+        ],
+        "technical": [
+          "Walk me through a DCF valuation from start to finish. What are the key drivers and assumptions?",
+          "What are the three main valuation methodologies? Compare their strengths and weaknesses.",
+          "A company has revenue of HKD 500M, EBITDA margin of 30%, D&A of HKD 20M, interest expense of HKD 10M, and a tax rate of 16.5% (HK rate). Walk me from revenue to free cash flow.",
+          "Explain what happens in an LBO model. What drives returns?",
+          "What are the implications of the Wealth Management Connect scheme for cross-border M&A advisory?"
+        ],
+        "situational": [
+          "You're staffed on three live deals simultaneously, all with demanding VPs. How do you prioritize and communicate?",
+          "A client's CFO is pushing back on your valuation because it's lower than their expectations. How do you handle this conversation?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about the most complex deal you've led or played a senior role on. What made it complex and how did you navigate it?",
+          "How have you built and managed relationships with C-level clients in the Hong Kong and Greater China market?",
+          "Describe a deal that fell apart at the last minute. What happened, and what did you learn?"
+        ],
+        "technical": [
+          "How would you value a pre-revenue biotech company seeking to list on HKEX Chapter 18A? What framework would you use?",
+          "Discuss the impact of rising US-China tensions on cross-border M&A activity. How would you advise a Chinese SOE looking to acquire a European asset?",
+          "Walk me through how you'd structure a take-private of a HK-listed company by a PE fund. What are the key regulatory and financing considerations?",
+          "How do you think about the competitive landscape between HKEX, SGX, and Shanghai STAR Board for tech IPOs?"
+        ],
+        "situational": [
+          "Your client is about to sign a definitive agreement, and you discover a material due diligence issue that your team missed. The client has already announced the deal to the press. What do you do?",
+          "A junior analyst on your team has made a recurring error in client-facing materials. You've coached them twice. How do you handle it now?"
+        ]
+      }
+    },
+    "Risk Analyst": {
+      "sector": "Banking & Finance",
+      "intern": {
+        "behavioral": [
+          "What interests you about risk management in the financial services industry?",
+          "Describe a situation where you identified a risk that others hadn't noticed.",
+          "How do you approach making decisions when you don't have complete information?",
+          "In your understanding, what are the biggest risks facing Hong Kong's financial sector today?"
+        ],
+        "technical": [
+          "What is the difference between market risk, credit risk, and operational risk? Give a brief example of each.",
+          "What does VaR (Value at Risk) measure? What does a 95% one-day VaR of HKD 1 million mean?",
+          "What is the difference between systematic and unsystematic risk?",
+          "Explain what a stress test is and why regulators like the HKMA require banks to conduct them."
+        ],
+        "situational": [
+          "You're monitoring a portfolio and notice an unusual spike in exposure to a particular sector. What do you do?",
+          "A trader is arguing that your risk limit is too conservative and is preventing profitable trades. How do you respond?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Tell me about a time you used quantitative analysis to make a recommendation. What was the outcome?",
+          "How do you communicate complex risk concepts to non-technical stakeholders? Give an example.",
+          "Describe a time you had to challenge a decision based on your risk assessment. How was it received?"
+        ],
+        "technical": [
+          "Explain the three approaches to calculating VaR: parametric, historical simulation, and Monte Carlo. Compare their advantages and limitations.",
+          "How would you stress-test a portfolio heavily exposed to the China property sector, given the recent Evergrande and Country Garden situations?",
+          "What is the SFC's margin lending guidelines framework? What are the key concentration and collateral requirements?",
+          "Explain how you would calculate and monitor counterparty credit risk for OTC derivatives under the Stock Connect program.",
+          "What is the difference between expected loss and unexpected loss? How are they used in determining economic capital?"
+        ],
+        "situational": [
+          "A front-office MD is pushing to onboard a new client from mainland China, but you've identified several red flags in the KYC/AML screening. How do you handle this?",
+          "Your risk model is flagging limit breaches daily for a trading desk that has historically been profitable. The desk head says the model is wrong. How do you investigate?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you led the implementation of a new risk framework or system across an organization. What were the key challenges?",
+          "How have you influenced risk culture in your organization? Give a specific example of a behavioral change you drove.",
+          "Describe a situation where you had to tell the board or CRO that the firm's risk exposure was significantly higher than previously reported."
+        ],
+        "technical": [
+          "How would you design the risk architecture for a virtual bank operating in Hong Kong under HKMA's virtual banking guidelines?",
+          "Discuss the evolution of climate risk integration into financial risk frameworks. How would you quantify transition risk for a HK bank's loan portfolio?",
+          "What are the key challenges in implementing IFRS 9 expected credit loss models? How do you balance statistical rigor with business interpretability?",
+          "How do you think about model risk governance in an era of increasing AI/ML adoption in credit decisioning? What controls are necessary?"
+        ],
+        "situational": [
+          "The HKMA's latest thematic review has identified material weaknesses in your bank's operational risk framework. The board wants a remediation plan in 30 days. How do you approach this?",
+          "Your risk team is losing talent to fintech firms offering 30% higher compensation. How do you retain and develop your team?"
+        ]
+      }
+    },
+    "Wealth Management Trainee": {
+      "sector": "Banking & Finance",
+      "intern": {
+        "behavioral": [
+          "Why are you interested in wealth management? What do you understand about the role?",
+          "How would you build trust with a client who is older and more experienced than you?",
+          "Tell me about a time you explained a concept to someone who initially didn't understand it.",
+          "What do you know about the typical wealth management client in Hong Kong?"
+        ],
+        "technical": [
+          "What is the difference between a stock and a bond? Explain in simple terms a client could understand.",
+          "What does diversification mean, and why is it important in a portfolio?",
+          "What is the difference between active and passive investing?",
+          "Explain what KYC (Know Your Customer) means in wealth management."
+        ],
+        "situational": [
+          "A client is unhappy with their portfolio performance and is considering moving to another bank. How do you handle the conversation?",
+          "You're asked to recommend a product to a client, but you're not fully familiar with it. What do you do?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Pitch me a stock or investment strategy suitable for a HNW client in the current interest rate environment.",
+          "Describe a time you built a long-term relationship with a client or stakeholder. What made it successful?",
+          "How do you handle a situation where a client wants to invest in a product that you believe is unsuitable for their risk profile?",
+          "In Hong Kong, many wealth management clients are from mainland China. How do you adapt your approach for cross-border clients?"
+        ],
+        "technical": [
+          "Explain the Wealth Management Connect scheme. How does it affect product shelf and client eligibility for GBA clients?",
+          "A client has HKD 10 million to invest with a moderate risk tolerance. How would you construct a diversified portfolio? Be specific about asset allocation.",
+          "What are structured products? Explain the risks and rewards of an equity-linked note to a hypothetical client.",
+          "How do you stay relevant as a wealth manager against robo-advisors like 8 Securities, Quantifeed, and StashAway?",
+          "What's your understanding of the CIES (Capital Investment Entrant Scheme) and its impact on the HK wealth management industry?"
+        ],
+        "situational": [
+          "A long-standing client asks you to help structure their investments to minimize CRS (Common Reporting Standard) reporting. How do you respond?",
+          "You discover a colleague has been recommending the same high-commission product to all their clients regardless of suitability. What do you do?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about your largest client relationship. How did you acquire them, and how have you grown the relationship over time?",
+          "Describe how you've built and managed a team of relationship managers. What's your approach to coaching and performance management?",
+          "How have you navigated a major market downturn with your client base? Give a specific example of a difficult client conversation."
+        ],
+        "technical": [
+          "How would you construct a multi-family office offering for UHNW clients in Hong Kong? Discuss governance, investment framework, and succession planning.",
+          "Discuss the evolving regulatory landscape for wealth management in Hong Kong versus Singapore. Where is HK gaining or losing competitive advantage?",
+          "How do you think about alternative investments (private equity, hedge funds, real estate) in a HNW portfolio? What allocation framework do you use?",
+          "What's your view on digital assets and crypto in wealth management? How would you advise a client who wants to allocate 10% of their portfolio to Bitcoin?"
+        ],
+        "situational": [
+          "Your largest client (HKD 100M+ AUM) is being aggressively courted by two competitor banks. How do you defend and deepen the relationship?",
+          "The son of your elderly client approaches you asking to transfer half of his mother's portfolio to his personal account, claiming she approved it. The mother hasn't mentioned this. What do you do?"
+        ]
+      }
+    },
+    "Fintech Associate": {
+      "sector": "Banking & Finance",
+      "intern": {
+        "behavioral": [
+          "What interests you about the intersection of finance and technology?",
+          "What fintech product or service do you personally use, and what would you improve about it?",
+          "Tell me about a time you learned a new technology quickly to complete a project.",
+          "What do you know about Hong Kong's fintech ecosystem and the HKMA's role?"
+        ],
+        "technical": [
+          "What is an API, and why are APIs important in fintech?",
+          "What is the difference between a traditional bank and a virtual bank?",
+          "Explain what open banking means. What opportunities does it create?",
+          "What is blockchain, and can you name one financial services use case for it?"
+        ],
+        "situational": [
+          "You're asked to research a new fintech trend and present to your team by tomorrow. The topic is unfamiliar to you. What's your approach?",
+          "A colleague suggests a fintech solution that you believe doesn't comply with SFC regulations. How do you raise this?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a project where you applied technology to solve a financial problem. What was your role and the outcome?",
+          "How do you balance innovation with regulatory compliance when designing a fintech product?",
+          "In Hong Kong, there are 8 licensed virtual banks. Which one impresses you most and why?"
+        ],
+        "technical": [
+          "How should traditional banks respond to the rise of fintech? Discuss the complement vs. compete framework with specific HK examples.",
+          "What do you know about Hong Kong's virtual banking landscape? Compare the value propositions of at least two virtual banks.",
+          "Walk me through how you would approach compliance digitization (regtech) for a wealth management firm. What processes would you automate first?",
+          "Explain the concept of embedded finance. How might it reshape distribution of financial products in Hong Kong?",
+          "What are CBDCs? Discuss the HKMA's Project e-HKD and its potential implications for the payments ecosystem."
+        ],
+        "situational": [
+          "Your fintech startup is building a product that falls in a regulatory gray area in Hong Kong. The founders want to launch first and ask for forgiveness later. What's your position?",
+          "A traditional bank client is skeptical that your digital solution can replace their established processes. How do you build trust and demonstrate value?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a fintech product or platform you built or led from concept to launch. What were the key decisions and tradeoffs?",
+          "How have you navigated the regulatory approval process (e.g., HKMA sandbox, SFC licensing) for a new fintech product?",
+          "Describe your approach to building partnerships between traditional financial institutions and technology providers."
+        ],
+        "technical": [
+          "Design the technical architecture for a digital wealth management platform serving Hong Kong and GBA clients. Address regulatory, cross-border data, and scalability considerations.",
+          "How do you think about build vs. buy vs. partner decisions in fintech? Give a framework and apply it to a KYC/AML solution.",
+          "What's your technology stack of choice for building a real-time payment processing system with 99.99% availability? Justify each component choice.",
+          "Discuss the competitive dynamics between payment players in Hong Kong: Octopus, AlipayHK, WeChat Pay HK, PayMe, and FPS. Where is the market heading?"
+        ],
+        "situational": [
+          "Your fintech platform experiences a data breach affecting 50,000 users in Hong Kong. Walk me through your incident response from the first hour to resolution.",
+          "The HKMA has requested a meeting about your firm's compliance processes. You're the senior tech lead. How do you prepare?"
+        ]
+      }
+    },
+    "Compliance Officer": {
+      "sector": "Banking & Finance",
+      "intern": {
+        "behavioral": [
+          "What interests you about compliance in the financial services industry?",
+          "Describe a time you had to follow a strict set of rules or procedures. How did you ensure accuracy?",
+          "How do you stay informed about current events and regulations affecting Hong Kong's financial sector?",
+          "What does integrity mean to you in a professional context?"
+        ],
+        "technical": [
+          "What is the role of the SFC in Hong Kong's financial markets?",
+          "What does KYC stand for, and why is it important?",
+          "What is money laundering? Can you describe the three stages?",
+          "What is the difference between a PEP (Politically Exposed Person) and a regular client from a compliance perspective?"
+        ],
+        "situational": [
+          "You notice a transaction that looks unusual but your supervisor says it's probably fine. What do you do?",
+          "A relationship manager is frustrated with your due diligence requests, saying they're delaying a client onboarding. How do you respond?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Tell me about a time you identified a process gap or control weakness. What did you do about it?",
+          "How do you handle a situation where business pressure conflicts with compliance requirements? Give an example.",
+          "What do you think are the biggest compliance challenges facing Hong Kong financial institutions in the next 3-5 years?"
+        ],
+        "technical": [
+          "Walk me through the SFC's licensing regime for regulated activities (Types 1-9). What activities does Type 1 cover, and why does it matter?",
+          "A relationship manager wants to onboard a PEP from mainland China. What enhanced due diligence measures would you require?",
+          "Explain the key requirements of the HKMA's AML/CFT Guidelines, including CDD, ongoing monitoring, and STR filing procedures.",
+          "What is the SFO (Securities and Futures Ordinance)? Discuss the market misconduct provisions and the SFC's enforcement powers.",
+          "How would you design and implement a trade surveillance system to detect potential market manipulation? What patterns would you look for?"
+        ],
+        "situational": [
+          "You're conducting a compliance review and discover that a senior executive has been approving their own expense reports, violating the delegated authority matrix. How do you handle this?",
+          "The business is launching a new structured product that pushes the boundary of existing regulations. You're asked to 'make it work.' What's your framework for assessing and responding?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you led a significant regulatory remediation program. What was the scope, and what did you achieve?",
+          "How have you influenced business leaders to proactively invest in compliance rather than treating it as a cost center?",
+          "Describe your experience managing relationships with regulators (SFC, HKMA, IA). What makes for an effective regulatory relationship?"
+        ],
+        "technical": [
+          "How would you build a compliance framework for a newly licensed virtual bank from the ground up? What are the unique compliance considerations versus a traditional bank?",
+          "Discuss the extraterritorial reach of US sanctions and export controls and how they create compliance challenges for Hong Kong-based financial institutions.",
+          "What's your approach to implementing a compliance training program that actually changes behavior? How do you measure effectiveness?",
+          "How do you see regtech and AI transforming compliance functions? What's hype versus what's actually delivering value today?"
+        ],
+        "situational": [
+          "A regulatory inspection (e.g., SFC thematic review) has identified significant deficiencies. The board wants answers. How do you manage the remediation while maintaining business-as-usual?",
+          "You learn that a competitor has been fined for a compliance failure that your firm may also be vulnerable to. How do you proactively address this?"
+        ]
+      }
+    },
+    "Management Consultant": {
+      "sector": "Professional Services",
+      "intern": {
+        "behavioral": [
+          "Why consulting? What do you think the day-to-day role looks like?",
+          "Tell me about a time you solved a complex problem with limited information.",
+          "How do you structure your thinking when approaching an unfamiliar problem?",
+          "What do you think sets apart a great consultant from a good one?"
+        ],
+        "technical": [
+          "Walk me through how you would estimate the annual revenue of the MTR system in Hong Kong.",
+          "A retail client's profits are declining. What framework would you use to diagnose the root cause?",
+          "What is the 80/20 principle (Pareto principle), and how might you apply it in a consulting engagement?",
+          "How would you structure a PowerPoint slide to communicate a key insight to a senior executive?"
+        ],
+        "situational": [
+          "Your manager gives you feedback that your analysis isn't structured enough. How do you improve?",
+          "You're staffed on a project in an industry you know nothing about. What do you do in the first 48 hours?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Tell me about a time you influenced someone without formal authority. What approach did you take?",
+          "Describe a situation where you had to analyze a large amount of data and synthesize it into a clear recommendation.",
+          "How do you handle a situation where a client disagrees with your recommendation despite the data supporting it?",
+          "In Hong Kong, many consulting projects involve cross-border teams (HK, mainland China, SE Asia). How do you work effectively across cultures?"
+        ],
+        "technical": [
+          "Estimate the market size for plant-based meat alternatives in Hong Kong. Walk me through your assumptions.",
+          "A HK-based retailer is considering expanding into the GBA. What factors would you analyze in your market entry recommendation?",
+          "A hotel chain's occupancy has declined from 85% to 65%. Using a profitability framework, walk me through your diagnostic approach.",
+          "What are the key components of a change management plan when implementing a new ERP system for a 5,000-employee company?",
+          "A PE firm is considering acquiring a HK-listed logistics company. What commercial due diligence would you conduct? Outline your work plan."
+        ],
+        "situational": [
+          "You're a junior consultant and you believe the partner's hypothesis about the client problem is wrong. How do you raise this?",
+          "The client's data is significantly worse quality than scoped, and your project timeline is fixed. How do you manage scope versus quality?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about the most challenging client situation you've managed. What made it difficult, and how did you navigate it?",
+          "How have you built a book of business or contributed to practice development in your consulting career?",
+          "Describe your approach to leading a multi-disciplinary consulting team on a complex transformation engagement."
+        ],
+        "technical": [
+          "How would you assess whether a HK conglomerate should spin off one of its business units versus selling it? Walk me through your strategic and financial analysis framework.",
+          "Design a post-merger integration plan for two regional banks merging their Hong Kong operations. Cover culture, systems, talent, and regulatory considerations.",
+          "What's your perspective on the future of consulting in the age of AI? How are you adapting your practice and client advice?",
+          "A Fortune 500 client wants to relocate their APAC headquarters. Compare Hong Kong vs Singapore across talent, tax, regulation, and cost. What's your recommendation?"
+        ],
+        "situational": [
+          "Your client's CEO has staked their reputation on a strategy you believe is fundamentally flawed. The engagement is worth HKD 20M to your firm. How do you handle this?",
+          "Midway through a transformation project, a key client stakeholder who was your biggest supporter leaves the company, and the new stakeholder wants to fundamentally change scope. What do you do?"
+        ]
+      }
+    },
+    "Audit Associate": {
+      "sector": "Professional Services",
+      "intern": {
+        "behavioral": [
+          "Why audit? What interests you about this career path?",
+          "Tell me about a time you had to be meticulous and detail-oriented. What was the task, and how did you ensure accuracy?",
+          "How do you handle working under pressure with tight deadlines?",
+          "What do you know about the Big 4 in Hong Kong and how they differ?"
+        ],
+        "technical": [
+          "What are the three main financial statements, and how do they connect?",
+          "What is the difference between internal audit and external audit?",
+          "What does materiality mean in auditing? Give a simple example.",
+          "What is the purpose of an audit working paper? What should it contain?"
+        ],
+        "situational": [
+          "You're reviewing a client's invoices and notice several missing from the sequence. What do you do?",
+          "Your senior asks you to complete a task you've never done before by end of day. How do you approach it?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a time you had to question someone's work or challenge an assumption. How did you approach it professionally?",
+          "During busy season at a Big 4 firm in Hong Kong, you'll often work 60-80 hour weeks. How do you maintain accuracy and well-being?",
+          "Tell me about a time you worked in a team where someone wasn't pulling their weight. What did you do?",
+          "Audit clients in Hong Kong range from local SMEs to multinationals. How do you adapt your communication style?"
+        ],
+        "technical": [
+          "Walk me through how you would audit the revenue recognition of a HK-listed company. What assertions would you test?",
+          "What is the difference between test of controls and substantive testing? When would you rely more on one versus the other?",
+          "Explain the concept of professional skepticism. Give a practical example of how you've applied it.",
+          "You're auditing inventory for a retail client with 50 stores across Hong Kong and Macau. How do you plan the stock count?",
+          "What's your understanding of HKFRS 16 (Leases) and its key implications for an airline or retail client?"
+        ],
+        "situational": [
+          "You find a HKD 500,000 payment to a related party that wasn't disclosed in the financial statements. The CFO says it's 'not material.' The group materiality is HKD 2 million. What do you do?",
+          "Your client hasn't provided key supporting documents despite three requests, and the reporting deadline is approaching. How do you escalate?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about the most complex audit engagement you've managed. What were the key audit matters, and how did you resolve them?",
+          "How do you coach and develop junior auditors? Describe your approach to on-the-job training and feedback.",
+          "Describe a situation where you had to deliver difficult feedback to a client (e.g., a material weakness finding). How did you manage the relationship?"
+        ],
+        "technical": [
+          "How would you audit the impairment assessment of goodwill for a HK-listed company with significant operations in mainland China, given the current economic environment?",
+          "Discuss your approach to auditing fair value measurements, particularly Level 3 valuations. How do you challenge management's assumptions?",
+          "A client is adopting HKFRS 17 (Insurance Contracts). Walk me through the key implementation challenges and how you would audit the transition.",
+          "What's your view on the use of data analytics and AI in audit? How are you incorporating these tools into your audit methodology?"
+        ],
+        "situational": [
+          "During the audit of a potential IPO candidate, you discover evidence suggesting management override of controls. The company is two months from listing. How do you proceed?",
+          "Your firm's audit quality review has identified recurring deficiencies in your engagement team's work. The partner wants a remediation plan. What do you propose?"
+        ]
+      }
+    },
+    "ESG Analyst": {
+      "sector": "Professional Services",
+      "intern": {
+        "behavioral": [
+          "What does ESG mean to you, and why are you interested in this field?",
+          "Tell me about a time you took initiative on an environmental or social issue.",
+          "How do you stay informed about sustainability trends and regulations?",
+          "In your opinion, what is the biggest sustainability challenge facing Hong Kong today?"
+        ],
+        "technical": [
+          "What are Scope 1, Scope 2, and Scope 3 emissions? Give an example of each.",
+          "What is the GHG Protocol and why is it important for corporate carbon accounting?",
+          "What is the difference between ESG reporting standards like GRI, SASB, and ISSB?",
+          "What does 'materiality' mean in ESG reporting? How is it different from financial materiality?"
+        ],
+        "situational": [
+          "You're asked to collect emissions data from a company that has never tracked it before. Where do you start?",
+          "A client tells you sustainability is 'just marketing.' How do you respond?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a time you had to convince someone of the importance of sustainability. What approach did you take?",
+          "How do you balance multiple reporting frameworks (GRI, SASB, HKEX, CDP) when advising a single company?",
+          "Tell me about a sustainability project or analysis you've worked on. What was your contribution and the outcome?"
+        ],
+        "technical": [
+          "Walk me through the HKEX ESG Reporting Code (Appendix C2) requirements. How have the climate disclosure requirements changed with ISSB alignment?",
+          "How would you calculate Scope 3 emissions for a Hong Kong-listed property developer? What categories would be most material?",
+          "Explain the concept of double materiality. How does it differ from the traditional financial materiality approach under ISSB?",
+          "What is the CDP (Carbon Disclosure Programme) and how does BEC (Business Environment Council) administer it in Hong Kong?",
+          "A HK-listed company wants to set a net-zero target. Walk me through the SBTi framework and what they need to commit to."
+        ],
+        "situational": [
+          "You're collecting Scope 3 data from a client's suppliers, and a major mainland Chinese supplier refuses to share their emissions data. How do you handle this?",
+          "The board wants to claim carbon neutrality, but their plan relies 90% on carbon offsets with minimal actual emissions reduction. How do you advise them?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you built an ESG program or function from scratch. What was your approach?",
+          "How have you influenced C-suite or board-level decision-making on sustainability strategy? Give a specific example.",
+          "Describe how you've managed stakeholder pushback on ESG initiatives, particularly when they involve significant short-term cost."
+        ],
+        "technical": [
+          "How would you conduct a climate scenario analysis for a HK-listed bank's loan portfolio, aligned with HKMA's Climate Risk Management guidelines?",
+          "Discuss the state of ESG assurance in Hong Kong. What standards apply, what level of assurance is typical, and where is the market heading?",
+          "How do you think about transition finance versus green finance? What role should Hong Kong play as a regional green finance hub?",
+          "A multinational with operations in 30 countries including HK wants to implement a global carbon price. Design the framework including governance, methodology, and integration with capital allocation."
+        ],
+        "situational": [
+          "An investor coalition is pressuring your client to exit all fossil fuel investments within 2 years. The client's board is divided. How do you advise?",
+          "Your ESG data provider's methodology change results in your client's rating dropping from BBB to CCC overnight. The client is furious. How do you respond?"
+        ]
+      }
+    },
+    "HR Specialist": {
+      "sector": "Professional Services",
+      "intern": {
+        "behavioral": [
+          "Why are you interested in human resources? What aspect of HR appeals to you most?",
+          "Tell me about a time you helped resolve a conflict between people.",
+          "How do you maintain confidentiality when handling sensitive information?",
+          "What do you think are the most important qualities of an HR professional?"
+        ],
+        "technical": [
+          "What is the purpose of an employment contract? What are the essential elements it should contain?",
+          "What does the Employment Ordinance (Cap. 57) cover in Hong Kong? Name three key provisions.",
+          "What is the difference between a structured and unstructured interview?",
+          "What is the Mandatory Provident Fund (MPF) and what are an employer's obligations?"
+        ],
+        "situational": [
+          "An employee comes to you with a complaint about their manager but asks you not to tell anyone. What do you do?",
+          "You're organizing a recruitment event and the speaker cancels at the last minute. How do you handle it?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a time you managed a sensitive employee situation. How did you balance empathy with organizational policy?",
+          "How do you handle a situation where a hiring manager wants to reject a candidate for reasons that could be discriminatory?",
+          "Tell me about a time you improved an HR process. What was the impact?",
+          "In Hong Kong's multicultural workplace, how do you ensure HR practices are inclusive and culturally sensitive?"
+        ],
+        "technical": [
+          "Walk me through the end-to-end recruitment process you would design for a mid-size company in Hong Kong. How do you ensure bias-free selection?",
+          "What are the key anti-discrimination ordinances in Hong Kong? What protected characteristics do they cover?",
+          "How would you conduct a job evaluation and determine appropriate salary bands for a new role?",
+          "Explain the difference between a disciplinary process and a performance improvement plan. What are the legal considerations in Hong Kong?",
+          "What's your approach to employee engagement surveys? How do you move from survey results to meaningful action?"
+        ],
+        "situational": [
+          "An employee has filed a formal grievance alleging harassment by a senior manager. The manager denies everything. How do you investigate?",
+          "The company is restructuring, and you need to manage redundancies affecting 30 employees. How do you plan and execute this while minimizing legal risk and maintaining dignity?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you led HR through a major organizational change (merger, restructuring, rapid growth). What was your strategy?",
+          "How have you influenced senior leadership to invest in employee development and well-being? Give a specific example with measurable outcomes.",
+          "Describe your approach to building an HR team and function that is seen as a strategic partner, not just an administrative function."
+        ],
+        "technical": [
+          "Design a total rewards strategy for a HK-based company with employees across Hong Kong, mainland China, and Southeast Asia. How do you handle localization vs. global consistency?",
+          "How do you build a talent management framework that identifies and develops future leaders? Discuss assessment, succession planning, and development programs.",
+          "What's your approach to managing cross-border employment in the GBA? Discuss the legal, tax, and practical considerations.",
+          "How do you think about HR technology and people analytics? What metrics do you track to demonstrate HR's impact on business outcomes?"
+        ],
+        "situational": [
+          "The CEO wants to implement a performance-based culture with forced ranking (bell curve). You believe this will damage collaboration and morale. How do you handle this?",
+          "Your company is being acquired, and employees are anxious about their jobs. The acquiring company has a very different culture. How do you manage the people side of M&A integration?"
+        ]
+      }
+    },
+    "Digital Marketing Specialist": {
+      "sector": "Marketing & E-commerce",
+      "intern": {
+        "behavioral": [
+          "Why digital marketing? What campaigns or brands have inspired you?",
+          "Tell me about a social media account or content project you've managed, even if personal.",
+          "How do you measure whether your marketing efforts are working?",
+          "Which social media platforms do you use most, and how do they differ in terms of marketing potential?"
+        ],
+        "technical": [
+          "What is SEO, and what are the key factors that affect search rankings?",
+          "What's the difference between CPC and CPA in digital advertising?",
+          "What is a marketing funnel? Describe the stages from awareness to purchase.",
+          "What analytics tools have you used, and what metrics would you track for a new content campaign?"
+        ],
+        "situational": [
+          "A social media post by your company receives negative comments. How do you respond?",
+          "Your marketing campaign is halfway through and the results are below expectations. What do you do?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a digital marketing campaign you planned and executed. What were the results, and what did you learn?",
+          "How do you stay current with digital marketing trends, especially in the rapidly changing Asian market?",
+          "Tell me about a time you used data to change your marketing strategy mid-campaign.",
+          "In Hong Kong, marketing campaigns often need to work across Cantonese, Mandarin, and English. How do you approach multilingual content strategy?"
+        ],
+        "technical": [
+          "How would you build a 3-month content calendar to improve organic traffic for a HK e-commerce brand? Be specific about keyword research, content types, and distribution.",
+          "Explain how you would set up and optimize a Google Ads campaign for a new product launch in Hong Kong. What's your approach to keyword selection, bidding, and A/B testing?",
+          "How do you integrate SEO insights into a paid search strategy to improve overall performance?",
+          "What experience do you have with Asia-specific platforms? Discuss WeChat marketing, Xiaohongshu (RED), Baidu SEO/PPC, or LINE Ads.",
+          "How would you approach a campaign targeting both Hong Kong and mainland China audiences? Discuss platform selection, language variants, and cultural considerations."
+        ],
+        "situational": [
+          "Your paid social campaign's engagement is strong but conversion rate is 0.3% against a 2% target. What diagnostic steps do you take?",
+          "Your competitor launches an aggressive price promotion during your planned campaign period. How do you respond?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you led a digital transformation of a traditional company's marketing function. What was your approach?",
+          "How have you built and managed high-performing marketing teams? What's your leadership philosophy?",
+          "Describe a situation where you had to defend your marketing budget to a CFO who was skeptical about digital marketing ROI."
+        ],
+        "technical": [
+          "How would you design a cross-channel attribution model for a company that sells through their website, Shopee, Lazada, and physical stores in Hong Kong?",
+          "Discuss your approach to scaling paid acquisition across multiple APAC countries while maintaining ROI. What localization is necessary?",
+          "How do you think about the balance between brand building and performance marketing? How do you measure brand impact?",
+          "What's your framework for evaluating and implementing marketing technology (MarTech)? Walk me through a recent tool selection decision."
+        ],
+        "situational": [
+          "Your marketing team has been executing well, but the company is pivoting to a completely new target audience. How do you restructure the marketing strategy and your team?",
+          "A poorly-timed marketing campaign has gone viral for the wrong reasons, generating significant brand damage. How do you handle the crisis?"
+        ]
+      }
+    },
+    "Product Manager": {
+      "sector": "Marketing & E-commerce",
+      "intern": {
+        "behavioral": [
+          "What product do you use daily that you think could be significantly improved? How would you improve it?",
+          "Tell me about a time you advocated for a user need that others didn't see.",
+          "How do you make decisions when you don't have all the information?",
+          "What do you think makes a great product manager?"
+        ],
+        "technical": [
+          "What is an MVP (Minimum Viable Product)? Why is it important?",
+          "How would you prioritize features if you had limited engineering resources?",
+          "What is the difference between a user story and a technical requirement?",
+          "Explain what a product roadmap is and who its audience is."
+        ],
+        "situational": [
+          "Your engineer says a feature will take 3 sprints. Your stakeholders expect it in 1 sprint. What do you do?",
+          "You receive conflicting feature requests from two important customer segments. How do you decide what to build?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Tell me about a product you managed or a feature you shipped. What was your process from discovery to launch?",
+          "How do you handle a situation where data tells you one thing but your intuition or user feedback tells you another?",
+          "Describe a time you had to say no to a stakeholder request. How did you communicate it?",
+          "In Hong Kong's market, many products serve both local and mainland Chinese users. How do you think about product localization?"
+        ],
+        "technical": [
+          "How would you define and measure success for a new feature in a HK food delivery app? What metrics matter most?",
+          "Walk me through how you would conduct user research for a product targeting elderly users in Hong Kong who may not be tech-savvy.",
+          "Design a feature prioritization framework. How do you balance user needs, business impact, and technical complexity?",
+          "You're the PM for a loyalty program feature. How do you write a PRD (Product Requirements Document)? What sections does it include?",
+          "How would you run an A/B test to decide between two checkout flow designs for an e-commerce app? Discuss sample size, duration, and success metrics."
+        ],
+        "situational": [
+          "Your engineering team estimates a key roadmap feature at 8 weeks. The CEO wants it in 4 weeks for a major partnership deadline. How do you manage this?",
+          "Customer support is reporting a surge in complaints about a feature you shipped 2 weeks ago. Data shows adoption is good but NPS dropped. What do you do?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about the most successful product you've led. What was your strategy, and what was the business impact in measurable terms?",
+          "How have you built and developed product teams? What makes a strong product culture?",
+          "Describe a product that failed or was sunset. What went wrong, and what did you learn?"
+        ],
+        "technical": [
+          "How do you develop product strategy for a multi-sided marketplace operating in Hong Kong? Discuss balancing supply-side and demand-side dynamics.",
+          "Walk me through how you would approach expanding an e-commerce product from Hong Kong into Southeast Asia. What changes across product, pricing, and operations?",
+          "How do you think about build vs. buy vs. partner for platform capabilities? Use a specific example from your experience.",
+          "What's your approach to product-led growth? How do you instrument the product to drive acquisition, activation, and retention?"
+        ],
+        "situational": [
+          "Your company's flagship product is losing market share to a well-funded competitor that copied your core features and undercut your pricing by 40%. What's your strategy?",
+          "The CEO wants to pivot the product in a direction you believe will alienate your core user base. You're the most senior product leader. How do you handle this?"
+        ]
+      }
+    },
+    "E-commerce Operations Specialist": {
+      "sector": "Marketing & E-commerce",
+      "intern": {
+        "behavioral": [
+          "What interests you about e-commerce operations?",
+          "Tell me about a time you had to manage multiple tasks or orders simultaneously. How did you stay organized?",
+          "What e-commerce platforms do you use as a consumer? What do you notice about how they operate?",
+          "What do you know about the e-commerce landscape in Hong Kong and Macau?"
+        ],
+        "technical": [
+          "What is order fulfillment? Describe the key steps from when a customer clicks 'buy' to delivery.",
+          "What is inventory management, and why is it important for an e-commerce business?",
+          "What KPIs would you track to measure the performance of an e-commerce operation?",
+          "What is the difference between a marketplace model (like Shopee) and a direct-to-consumer model?"
+        ],
+        "situational": [
+          "A customer's order is delayed due to a logistics issue, and they've posted a complaint on social media. How do you handle it?",
+          "You notice that inventory levels for a popular product are wrong in the system, leading to overselling. What do you do?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a time you improved an operational process. What was the before and after?",
+          "How do you manage relationships with multiple vendors or logistics partners?",
+          "Tell me about a time you had to resolve a complex customer issue that spanned multiple departments.",
+          "In Hong Kong, cross-border e-commerce (e.g., into mainland China or SE Asia) is common. What operational challenges do you anticipate?"
+        ],
+        "technical": [
+          "Walk me through how you would set up operations for a new e-commerce brand selling on Shopee, Lazada, and their own website simultaneously. How do you manage inventory sync?",
+          "How do you optimize order fulfillment for a business shipping from Hong Kong to customers across Asia-Pacific? Discuss warehousing, last-mile delivery, and returns.",
+          "What's your approach to demand forecasting for a seasonal e-commerce business? What data would you use, and how would you handle the 11.11/12.12 peak?",
+          "Explain how you would handle reverse logistics (returns and exchanges) for a fashion e-commerce business with a 30% return rate.",
+          "How do you use data to identify operational bottlenecks? Walk me through a specific example and the metrics you monitored."
+        ],
+        "situational": [
+          "Your warehouse team in Kwai Chung is overwhelmed during a flash sale, and orders are shipping 3 days late. How do you manage the situation in real-time and prevent recurrence?",
+          "A key supplier has consistently delivered late for the past month, affecting your stock levels. The supplier blames shipping delays from their factory in Shenzhen. What do you do?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you led a major operational transformation (e.g., warehouse automation, system migration, new market launch). What were the results?",
+          "How have you built and managed operations teams? What's your approach to KPIs and performance management?",
+          "Describe a time you managed a significant supply chain disruption. How did you maintain business continuity?"
+        ],
+        "technical": [
+          "How would you design the end-to-end supply chain and logistics network for an e-commerce company expanding from Hong Kong into 6 SE Asian countries?",
+          "Discuss the tradeoffs between dropshipping, 3PL, and owned warehousing for an e-commerce business at different stages of scale.",
+          "What's your experience with warehouse management systems (WMS) and order management systems (OMS)? How do you evaluate and implement these systems?",
+          "How do you think about the role of AI and automation in e-commerce operations? What's worth investing in today versus waiting?"
+        ],
+        "situational": [
+          "Your company is considering moving all warehousing from Hong Kong to Shenzhen to reduce costs by 40%, but you know this will increase delivery times and cross-border complexity. How do you advise?",
+          "A major logistics partner has lost your company's shipments for 200+ orders during the 11.11 peak. Customers are angry, and social media is flooded with complaints. How do you manage this crisis?"
+        ]
+      }
+    },
+    "Graduate Civil Engineer": {
+      "sector": "Engineering & Construction",
+      "intern": {
+        "behavioral": [
+          "Why did you choose civil engineering? What aspects of the field excite you most?",
+          "Tell me about a group project where you contributed to the design or planning. What was your role?",
+          "How do you ensure accuracy when working with technical drawings or calculations?",
+          "What do you know about major infrastructure projects in Hong Kong or Macau?"
+        ],
+        "technical": [
+          "What is the difference between dead load and live load in structural engineering?",
+          "What is a bearing capacity of soil, and why is it important in foundation design?",
+          "Explain what BIM (Building Information Modeling) is and its benefits.",
+          "What are the main types of foundations, and what factors determine which type to use?"
+        ],
+        "situational": [
+          "You're on site and notice a safety violation. The site supervisor tells you it's 'normal practice.' What do you do?",
+          "You're asked to complete a structural calculation but realize you need more information from the architect, who is unavailable. How do you proceed?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a design or construction challenge you faced and how you solved it technically.",
+          "How do you communicate complex engineering concepts to non-technical stakeholders, such as clients or government officials?",
+          "Tell me about a time you worked in a multi-disciplinary team (e.g., with architects, MEP engineers, QS). How did you ensure coordination?",
+          "Hong Kong has unique constraints: dense urban environment, steep terrain, typhoons. How do these shape your engineering approach?"
+        ],
+        "technical": [
+          "Walk me through the Hong Kong building plan submission process to the Buildings Department. What are the key approval stages?",
+          "How would you design a retaining wall for a HK hillside development, considering the city's heavy rainfall and steep slopes?",
+          "Explain the concept of structural dynamics as it applies to typhoon-resistant building design in Hong Kong.",
+          "You're supervising a concrete pour for a high-rise in Hong Kong. What quality control checks do you perform?",
+          "What are the key considerations when designing drainage systems for Hong Kong's urban environment, given the increasing frequency of extreme rainfall events?"
+        ],
+        "situational": [
+          "During excavation near an existing MTR tunnel, monitoring shows ground movement exceeding the trigger level. What immediate actions do you take?",
+          "The contractor is proposing a construction method that saves time but you believe compromises long-term durability. How do you handle this?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about the largest or most complex civil engineering project you've led. What was your role, budget, and outcome?",
+          "How have you managed client relationships and expectations on long-duration infrastructure projects?",
+          "Describe your approach to managing design changes mid-construction. How do you balance cost, schedule, and quality?"
+        ],
+        "technical": [
+          "How would you approach the design and construction planning for a reclamation project in Hong Kong waters, considering environmental impact assessments, marine traffic, and ground improvement?",
+          "Discuss your experience with NEC (New Engineering Contract) forms commonly used in Hong Kong government projects. How do they differ from traditional contracts?",
+          "What's your technical approach to assessing the seismic risk for a Hong Kong high-rise, given the city's moderate seismicity and the updated seismic code?",
+          "How do you integrate sustainability and carbon reduction into civil engineering design? Give specific examples from your projects."
+        ],
+        "situational": [
+          "A major unforeseen ground condition is discovered during construction that will add HKD 100M and 6 months to the project. The client is a government body with fixed budget. How do you manage this?",
+          "Your project has been blamed for causing settlement damage to neighboring buildings. Residents are protesting, and the media is involved. How do you handle the situation?"
+        ]
+      }
+    },
+    "Supply Chain Analyst": {
+      "sector": "Engineering & Construction",
+      "intern": {
+        "behavioral": [
+          "What interests you about supply chain management?",
+          "Tell me about a time you solved a logistical problem, even in a non-work context.",
+          "How do you approach analyzing a problem when you have data from multiple sources?",
+          "What do you think are the key supply chain challenges for a hub like Hong Kong?"
+        ],
+        "technical": [
+          "What is the difference between procurement and supply chain management?",
+          "What is a lead time, and why is it important in supply chain planning?",
+          "Explain the concept of just-in-time (JIT) vs. just-in-case inventory. What are the tradeoffs?",
+          "What does the term 'bullwhip effect' mean in supply chain?"
+        ],
+        "situational": [
+          "A shipment of critical materials is delayed at the Hong Kong-Macau border. Production is scheduled to start tomorrow. What do you do?",
+          "You're analyzing supplier performance data and notice a vendor's on-time delivery rate has dropped from 95% to 78% over three months. What do you do?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a time you used data analysis to improve a supply chain process or reduce costs.",
+          "How do you manage relationships with difficult suppliers while maintaining professional standards?",
+          "Tell me about a time you had to make a decision with incomplete data. How did you approach it?",
+          "Hong Kong is a key logistics hub for Asia. How do geopolitical factors (e.g., US-China tensions) affect supply chain strategy?"
+        ],
+        "technical": [
+          "How would you conduct a supplier evaluation and selection process? What criteria would you use beyond just price?",
+          "Explain how you would set up an inventory optimization model. What data inputs do you need, and what outputs drive decisions?",
+          "A manufacturing company with suppliers across the Pearl River Delta is experiencing frequent production delays. Walk me through your diagnostic approach.",
+          "What is the difference between a forward and reverse logistics network? How would you design each?",
+          "How would you use data visualization or a dashboard to monitor supply chain health? What KPIs would you include?"
+        ],
+        "situational": [
+          "A key supplier in Shenzhen has been impacted by unexpected power restrictions, and your company's production line in Hong Kong will idle in 3 days without components. What's your contingency plan?",
+          "Your cost analysis shows that switching to a cheaper supplier would save HKD 2M annually, but you've heard concerns about their labor practices. How do you evaluate this decision?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about a time you led a major supply chain transformation. What did you change, and what were the results?",
+          "How have you built supply chain resilience in your organization? Give a specific example of a disruption you navigated.",
+          "Describe your approach to developing and mentoring supply chain professionals."
+        ],
+        "technical": [
+          "How would you design a supply chain network strategy for a company with manufacturing in the GBA and customers across Asia-Pacific, considering the various free trade agreements and customs regimes?",
+          "Discuss your approach to supply chain risk management. How do you identify, quantify, and mitigate risks across a multi-tier supplier network?",
+          "How do you think about the role of digital twins, AI, and advanced analytics in supply chain management? What's delivering real value versus hype?",
+          "Design a sustainability program for a supply chain with 200+ suppliers across Asia. How do you measure, track, and reduce Scope 3 emissions?"
+        ],
+        "situational": [
+          "A major geopolitical event has disrupted shipping routes through the South China Sea. 40% of your company's inbound materials are affected. How do you lead the response?",
+          "Your supply chain team is fragmented: procurement reports to Finance, logistics to Operations, and planning to Sales. How do you propose restructuring for end-to-end visibility?"
+        ]
+      }
+    },
+    "Building Services Engineer": {
+      "sector": "Engineering & Construction",
+      "intern": {
+        "behavioral": [
+          "What interests you about building services engineering (MEP)?",
+          "Tell me about a time you worked on a technical project that required attention to detail.",
+          "How do you approach learning new technical standards or codes?",
+          "What do you know about Hong Kong's building energy efficiency requirements?"
+        ],
+        "technical": [
+          "What are the main MEP (Mechanical, Electrical, Plumbing) systems in a commercial building?",
+          "What is HVAC, and what are its main components?",
+          "What is the purpose of a fire services system in a building? Name two key components.",
+          "What is the Building Energy Code (BEC) in Hong Kong, and what does it regulate?"
+        ],
+        "situational": [
+          "You're reviewing MEP drawings and spot a potential clash between ductwork and a structural beam. What do you do?",
+          "A contractor on site wants to substitute a specified equipment with a cheaper alternative. How do you evaluate this request?"
+        ]
+      },
+      "graduate": {
+        "behavioral": [
+          "Describe a building services design project you worked on. What was your contribution, and what challenges did you face?",
+          "How do you coordinate with architects, structural engineers, and other disciplines on a complex building project?",
+          "Tell me about a time you had to solve a technical problem under time pressure on site.",
+          "Hong Kong's dense high-rise environment creates unique MEP challenges. How do you approach designing for limited plant room space?"
+        ],
+        "technical": [
+          "Walk me through the Hong Kong fire services installation requirements for a 40-story commercial building. What are the key systems and codes?",
+          "How would you design the air-conditioning system for a mixed-use development in Hong Kong's hot and humid climate, balancing energy efficiency with occupant comfort?",
+          "Explain how you would approach water supply design for a high-rise tower, including booster pumps, zoning, and storage requirements.",
+          "What is a BEAM Plus assessment? Walk through the key credits related to building services design.",
+          "How do you size an emergency generator for a commercial building? What loads must it support, and what redundancy is typically required?"
+        ],
+        "situational": [
+          "During testing and commissioning, the chiller plant is not meeting the specified performance. The contractor blames the equipment supplier; the supplier blames the installation. How do you investigate?",
+          "The architect proposes a glazing design that will significantly increase cooling load, potentially exceeding the designed HVAC capacity. How do you communicate this?"
+        ]
+      },
+      "experienced": {
+        "behavioral": [
+          "Tell me about the most complex building services project you've led. What was the scale, and what were the key technical challenges?",
+          "How have you managed design-build contracts and the interface between consultants and contractors?",
+          "Describe your approach to mentoring junior engineers and developing technical capability in your team."
+        ],
+        "technical": [
+          "How would you develop a smart building strategy for a HK Grade A office tower? Discuss IoT integration, energy optimization, predictive maintenance, and the business case.",
+          "Discuss your approach to designing net-zero carbon MEP systems for a new development in Hong Kong. What technologies and strategies would you prioritize?",
+          "How do you commission a complex building management system (BMS) that integrates HVAC, lighting, fire, security, and lift systems? What's your testing and verification methodology?",
+          "What's your experience with modular integrated construction (MiC) and DfMA for MEP systems? How do they change the design and coordination process?"
+        ],
+        "situational": [
+          "Post-occupancy evaluation reveals that a recently completed building's energy consumption is 40% higher than designed. The client is threatening legal action. How do you investigate and respond?",
+          "You're the lead MEP consultant for a hospital project. Mid-construction, the Hospital Authority updates its infection control requirements, requiring significant MEP changes. The project is already 30% built. How do you manage this?"
+        ]
+      }
+    }
+  }
+}
