@@ -16,7 +16,7 @@ def main() -> None:
         sys.exit(1)
 
     ensure_containers()
-    print("Cosmos DB ready: career-compass / student_profiles / resumes")
+    print("Cosmos DB ready: career-compass / student_profiles / resumes / interview_sessions")
 
 
 if __name__ == "__main__":

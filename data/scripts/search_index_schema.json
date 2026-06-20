@@ -1,0 +1,21 @@
+{
+  "name": "skills-index",
+  "fields": [
+    { "name": "id", "type": "Edm.String", "key": true, "searchable": false, "filterable": true },
+    { "name": "roleTitle", "type": "Edm.String", "searchable": true, "filterable": true, "facetable": true },
+    { "name": "roleTitleZh", "type": "Edm.String", "searchable": true, "filterable": false },
+    { "name": "sector", "type": "Edm.String", "searchable": true, "filterable": true, "facetable": true },
+    { "name": "subSector", "type": "Edm.String", "searchable": true, "filterable": true },
+    { "name": "skillName", "type": "Edm.String", "searchable": true, "filterable": true },
+    { "name": "skillCategory", "type": "Edm.String", "searchable": true, "filterable": true, "facetable": true },
+    { "name": "skillImportance", "type": "Edm.String", "searchable": false, "filterable": true, "facetable": true },
+    { "name": "skillDescription", "type": "Edm.String", "searchable": true },
+    { "name": "skillLevel", "type": "Edm.String", "searchable": false, "filterable": true },
+    { "name": "typicalSalary", "type": "Edm.String", "searchable": true },
+    { "name": "growthOutlook", "type": "Edm.String", "searchable": true },
+    { "name": "hiringIndustries", "type": "Collection(Edm.String)", "searchable": true, "filterable": true },
+    { "name": "isEntryLevel", "type": "Edm.Boolean", "filterable": true },
+    { "name": "keywords", "type": "Collection(Edm.String)", "searchable": true, "filterable": true },
+    { "name": "source", "type": "Edm.String", "searchable": false }
+  ]
+}
