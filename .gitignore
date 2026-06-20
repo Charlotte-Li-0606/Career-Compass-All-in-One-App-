@@ -10,7 +10,11 @@ venv/
 
 # Azure
 local.settings.json
+run_local.py
 .azureconfig/
+
+# Frontend env
+frontend/.env
 
 # IDE
 .idea/

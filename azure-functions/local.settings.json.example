@@ -12,6 +12,7 @@
     "COSMOS_DATABASE": "career-compass",
     "COSMOS_PROFILES_CONTAINER": "student_profiles",
     "COSMOS_RESUMES_CONTAINER": "resumes",
+    "COSMOS_INTERVIEW_CONTAINER": "interview_sessions",
     "AZURE_SEARCH_ENDPOINT": "https://YOUR-SEARCH.search.windows.net",
     "AZURE_SEARCH_KEY": "your_search_admin_key_here",
     "AZURE_SEARCH_INDEX": "skills-index"
