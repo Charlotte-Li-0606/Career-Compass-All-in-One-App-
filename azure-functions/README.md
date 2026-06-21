@@ -1,4 +1,4 @@
-# Azure Functions API (同学 B)
+# Azure Functions API 
 
 HTTP triggers for Career Compass backend.
 
