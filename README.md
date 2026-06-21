@@ -1,6 +1,7 @@
 # Career Compass
 
 An AI-powered career coach for Hong Kong and Macau university students — built for the **Microsoft Agent Impact Lab** hackathon (June 2026).
+Technical stack of this project lying in PowerPoint slides for presentation are stored inside https://canva.link/rfzpqqpjtdn1hxa .
 
 **Track:** Reinvent Student Engagement (Career Readiness)
 **Stack:** Pro-Code (Azure-hosted)
