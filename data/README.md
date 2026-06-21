@@ -1,6 +1,6 @@
 # Career Compass — Data Directory
 
-Hong Kong and Macau job market data for the Career Compass AI career coach. This directory contains a structured taxonomy of Hong Kong job roles, their required skills, salary benchmarks, and industry insights. The data feeds **Azure AI Search**, which serves as the knowledge layer for GPT-4o to generate personalized skills tables.
+Hong Kong and Macau job market data for the Career Compass AI career coach. This directory contains a structured taxonomy of Hong Kong job roles, their required skills, salary benchmarks, and industry insights. The data feeds **Azure AI Search**, which serves as the knowledge layer for Phi-4-mini-instruct to generate personalized skills tables.
 
 ## Data Coverage
 
@@ -74,7 +74,7 @@ Transforms the role JSON files into `skills/skills_index.json` — a flat array 
 
 ### 3. Upload to Azure AI Search
 
-The `skills_index.json` file is ready for your teammate to ingest into Azure AI Search. Each document has:
+The `skills_index.json` file is ready to ingest into Azure AI Search. Each document has:
 - `id` — composite key `{role}~{skill}` for upsert operations
 - `searchFields` — `roleTitle`, `skillName`, `skillCategory`, `skillDescription`
 - `filterable` fields — `sector`, `skillImportance`, `isEntryLevel`
@@ -91,8 +91,8 @@ The `skills_index.json` file is ready for your teammate to ingest into Azure AI 
 
 ## Design Notes
 
-- **One document per skill-role pair** (not per role). This enables GPT-4o to query at skill granularity.
+- **One document per skill-role pair** (not per role). This enables Phi-4-mini-instruct to query at skill granularity.
 - **Importance levels** (critical / recommended / nice-to-have) define how essential a skill is for a given role, not how proficient a student is.
-- **Proficiency** (mastered / learning / missing) is inferred by GPT-4o based on the student's profile and is NOT in this data.
-- **The Skills Table** is always derived from the Career Summary — the summary identifies roles, roles map to required skills via AI Search, and GPT-4o maps student experience to proficiency.
+- **Proficiency** (mastered / learning / missing) is inferred by Phi-4-mini-instruct based on the student's profile and is NOT in this data.
+- **The Skills Table** is always derived from the Career Summary — the summary identifies roles, roles map to required skills via AI Search, and Phi-4-mini-instruct maps student experience to proficiency.
 - **Languages** (Cantonese, Mandarin, English) are treated as skills in the taxonomy because language proficiency is a critical differentiator in the HK job market.
