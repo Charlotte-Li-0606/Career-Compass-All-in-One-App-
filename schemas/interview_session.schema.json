@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://career-compass/schemas/interview_session.json",
+  "title": "InterviewSession",
+  "description": "Cosmos DB document for interview_sessions container (partition key: /sessionId)",
+  "type": "object",
+  "required": ["id", "sessionId", "userId", "targetRole", "status", "turns", "createdAt", "updatedAt"],
+  "properties": {
+    "id": { "type": "string" },
+    "sessionId": { "type": "string" },
+    "userId": { "type": "string" },
+    "major": { "type": "string" },
+    "skills": { "type": "string" },
+    "targetRole": { "type": "string" },
+    "questions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "turns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question", "answer"],
+        "properties": {
+          "question": { "type": "string" },
+          "answer": { "type": "string" },
+          "followup": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "status": { "enum": ["active", "completed"] },
+    "report": { "type": "object" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

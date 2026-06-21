@@ -1,0 +1,316 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Career Compass API",
+    "description": "Career Compass Azure Functions — career summary, skills table, resume refinement, and mock interview for HK/Macau university students.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://macroboard-b5bhb3evfcfeeqaw.germanywestcentral-01.azurewebsites.net/api"
+    }
+  ],
+  "paths": {
+    "/get_career_summary": {
+      "post": {
+        "operationId": "getCareerSummary",
+        "summary": "Generate career summary from student profile",
+        "description": "Use when a student shares major, year, university, and target roles and wants career advice, recommended roles, or next steps.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/UserProfile" },
+              "example": {
+                "major": "Computer Science",
+                "year": 3,
+                "university": "HKU",
+                "interests": ["data analytics"],
+                "targetRoles": ["Data Analyst"],
+                "pastInternships": [],
+                "extracurriculars": []
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Career summary JSON",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/CareerSummary" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get_skills_table": {
+      "post": {
+        "operationId": "getSkillsTable",
+        "summary": "Generate skills gap table from profile and career summary",
+        "description": "Use after career summary when the student asks about skills gaps, required skills, or mastered/learning/missing skills.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/SkillsTableRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Skills table JSON",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/SkillsTable" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/optimize_resume": {
+      "post": {
+        "operationId": "optimizeResume",
+        "summary": "Refine resume text based on instructions",
+        "description": "Use when the student pastes resume text and asks for improvements or tailoring.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/ResumeRefinementRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Refined resume JSON",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ResumeRefinementResponse" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/start_interview": {
+      "post": {
+        "operationId": "startInterview",
+        "summary": "Start mock interview session",
+        "description": "Use when the student wants to begin a mock interview for a target role.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/StartInterviewRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Session ID and interview questions",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/StartInterviewResponse" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/submit_answer": {
+      "post": {
+        "operationId": "submitInterviewAnswer",
+        "summary": "Submit interview answer and get follow-up question",
+        "description": "Use during an active mock interview after the student answers a question.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/SubmitAnswerRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Follow-up question",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/SubmitAnswerResponse" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/generate_report": {
+      "post": {
+        "operationId": "generateInterviewReport",
+        "summary": "Generate mock interview performance report",
+        "description": "Use when the mock interview is finished and the student wants feedback.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/GenerateReportRequest" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Interview performance report",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/InterviewReport" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "UserProfile": {
+        "type": "object",
+        "required": ["major", "year", "university", "targetRoles"],
+        "properties": {
+          "major": { "type": "string" },
+          "year": { "type": "integer" },
+          "university": { "type": "string" },
+          "interests": { "type": "array", "items": { "type": "string" } },
+          "targetRoles": { "type": "array", "items": { "type": "string" } },
+          "pastInternships": { "type": "array", "items": { "type": "string" } },
+          "extracurriculars": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+      "CareerSummary": {
+        "type": "object",
+        "properties": {
+          "overview": { "type": "string" },
+          "recommendedRoles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "fit": { "type": "string" },
+                "growthOutlook": { "type": "string" }
+              }
+            }
+          },
+          "industryInsights": { "type": "string" },
+          "nextSteps": { "type": "array", "items": { "type": "string" } },
+          "generatedAt": { "type": "string" }
+        }
+      },
+      "SkillsTableRequest": {
+        "type": "object",
+        "required": ["profile", "careerSummary"],
+        "properties": {
+          "profile": { "$ref": "#/components/schemas/UserProfile" },
+          "careerSummary": { "$ref": "#/components/schemas/CareerSummary" }
+        }
+      },
+      "SkillsTable": {
+        "type": "object",
+        "properties": {
+          "summary": { "type": "string" },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "category": { "type": "string" },
+                "proficiency": { "type": "string", "enum": ["mastered", "learning", "missing"] },
+                "description": { "type": "string" },
+                "importance": { "type": "string", "enum": ["critical", "recommended", "nice-to-have"] }
+              }
+            }
+          },
+          "generatedAt": { "type": "string" }
+        }
+      },
+      "ResumeRefinementRequest": {
+        "type": "object",
+        "required": ["originalText", "instructions"],
+        "properties": {
+          "originalText": { "type": "string" },
+          "instructions": { "type": "string" },
+          "careerContext": { "type": "string" }
+        }
+      },
+      "ResumeRefinementResponse": {
+        "type": "object",
+        "properties": {
+          "refinedText": { "type": "string" },
+          "changes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "enum": ["added", "removed", "modified"] },
+                "description": { "type": "string" },
+                "section": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "StartInterviewRequest": {
+        "type": "object",
+        "required": ["target_role"],
+        "properties": {
+          "major": { "type": "string" },
+          "skills": { "type": "string" },
+          "target_role": { "type": "string" },
+          "userId": { "type": "string" }
+        }
+      },
+      "StartInterviewResponse": {
+        "type": "object",
+        "properties": {
+          "sessionId": { "type": "string" },
+          "questions": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+      "SubmitAnswerRequest": {
+        "type": "object",
+        "required": ["sessionId", "question", "answer"],
+        "properties": {
+          "sessionId": { "type": "string" },
+          "question": { "type": "string" },
+          "answer": { "type": "string" }
+        }
+      },
+      "SubmitAnswerResponse": {
+        "type": "object",
+        "properties": {
+          "followup": { "type": "string" }
+        }
+      },
+      "GenerateReportRequest": {
+        "type": "object",
+        "required": ["sessionId"],
+        "properties": {
+          "sessionId": { "type": "string" }
+        }
+      },
+      "InterviewReport": {
+        "type": "object",
+        "properties": {
+          "overall_score": { "type": "integer" },
+          "technical_knowledge": { "type": "integer" },
+          "communication": { "type": "integer" },
+          "problem_solving": { "type": "integer" },
+          "strengths": { "type": "array", "items": { "type": "string" } },
+          "weaknesses": { "type": "array", "items": { "type": "string" } },
+          "improvement_plan": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}
